@@ -1,0 +1,634 @@
+{
+  "id" : 1,
+  "name" : "Name",
+  "description" : "Description",
+  "lastModifiedDate" : "2023-10-11T16:39:17Z",
+  "lastModifiedAgent" : "structurizr-javascript",
+  "properties" : {
+    "structurizr.dsl" : "d29ya3NwYWNlIHsKCiAgICBtb2RlbCB7CiAgICAgICAgdXNlciA9IHBlcnNvbiAiVXNlciIKICAgICAgICBic3ZOb2RlID0gc29mdHdhcmVTeXN0ZW0gIkJpdGNvaW4gU1YgTm9kZSIgewogICAgICAgICAgICBkZXNjcmlwdGlvbiAiQSBjb21wcmVoZW5zaXZlIEJpdGNvaW4gU1YgKEJTVikgbm9kZSBpbXBsZW1lbnRhdGlvbiIKICAgICAgICAgICAgZGF0YWJhc2UgPSBjb250YWluZXIgIkRhdGFiYXNlIiAiU3RvcmVzIGJsb2NrY2hhaW4gZGF0YSwgVVRYT3MsIHRyYW5zYWN0aW9uIG1ldGFkYXRhIiAiU1FMIgogICAgICAgICAgICBibG9ja2NoYWluU2VydmljZSA9IGNvbnRhaW5lciAiQmxvY2tjaGFpbiBTZXJ2aWNlIiAiSW50ZXJhY3RzIHdpdGggdGhlIEJpdGNvaW4gU1YgYmxvY2tjaGFpbiIKICAgICAgICAgICAgdXR4b1NlcnZpY2UgPSBjb250YWluZXIgIlVUWE8gU2VydmljZSIgIk1hbmFnZXMgVVRYT3MiCiAgICAgICAgICAgIHRyYW5zYWN0aW9uU2VydmljZSA9IGNvbnRhaW5lciAiVHJhbnNhY3Rpb24gTWV0YWRhdGEgU2VydmljZSIgIk1hbmFnZXMgdHJhbnNhY3Rpb24gbWV0YWRhdGEiCiAgICAgICAgICAgIHAycFNlcnZpY2UgPSBjb250YWluZXIgIlAyUCBTZXJ2aWNlIiAiSGFuZGxlcyBQMlAgY29tbXVuaWNhdGlvbiIKICAgICAgICAgICAgbWluZXJTZXJ2aWNlID0gY29udGFpbmVyICJNaW5lciBTZXJ2aWNlIiAiTWluZXMgbmV3IGJsb2NrcyIKICAgICAgICAgICAgYmxvYlNlcnZlciA9IGNvbnRhaW5lciAiQmxvYiBTZXJ2ZXIiICJTdG9yZXMgYW5kIHJldHJpZXZlcyBsYXJnZSBkYXRhIG9iamVjdHMiCiAgICAgICAgICAgIHVpID0gY29udGFpbmVyICJVSSBEYXNoYm9hcmQiICJVc2VyIGludGVyZmFjZSBmb3IgaW50ZXJhY3Rpbmcgd2l0aCB0aGUgbm9kZSIgIlN2ZWx0ZSIKICAgICAgICAgICAgYmxvY2tBc3NlbWJseVNlcnZpY2UgPSBjb250YWluZXIgIkJsb2NrIEFzc2VtYmx5IFNlcnZpY2UiICJBc3NlbWJsZXMgbmV3IGJsb2NrcyIKICAgICAgICAgICAgYmxvY2tWYWxpZGF0aW9uU2VydmljZSA9IGNvbnRhaW5lciAiQmxvY2sgVmFsaWRhdGlvbiBTZXJ2aWNlIiAiVmFsaWRhdGVzIG5ldyBibG9ja3MiCiAgICAgICAgICAgIHByb3BhZ2F0aW9uU2VydmljZSA9IGNvbnRhaW5lciAiUHJvcGFnYXRpb24gU2VydmljZSIgIlByb3BhZ2F0ZXMgbmV3IGJsb2NrcyBhbmQgdHJhbnNhY3Rpb25zIgogICAgICAgICAgICBzZWVkZXJTZXJ2aWNlID0gY29udGFpbmVyICJTZWVkZXIgU2VydmljZSIgIlNlZWRzIG5ldyB0cmFuc2FjdGlvbnMiCiAgICAgICAgICAgIGNvaW5iYXNlU2VydmljZSA9IGNvbnRhaW5lciAiQ29pbmJhc2UgU2VydmljZSIgIk1hbmFnZXMgY29pbmJhc2UgdHJhbnNhY3Rpb25zIgogICAgICAgICAgICBib290c3RyYXBTZXJ2aWNlID0gY29udGFpbmVyICJCb290c3RyYXAgU2VydmljZSIgIkJvb3RzdHJhcHMgdGhlIHN5c3RlbSIKCiAgICAgICAgICAgIGJsb2NrY2hhaW5TZXJ2aWNlIC0+IGRhdGFiYXNlICJSZWFkcyBmcm9tIGFuZCB3cml0ZXMgdG8iCiAgICAgICAgICAgIHV0eG9TZXJ2aWNlIC0+IGRhdGFiYXNlICJSZWFkcyBmcm9tIGFuZCB3cml0ZXMgdG8iCiAgICAgICAgICAgIHRyYW5zYWN0aW9uU2VydmljZSAtPiBkYXRhYmFzZSAiUmVhZHMgZnJvbSBhbmQgd3JpdGVzIHRvIgogICAgICAgICAgICBtaW5lclNlcnZpY2UgLT4gYmxvY2tjaGFpblNlcnZpY2UgIkludGVyYWN0cyB3aXRoIgogICAgICAgICAgICBtaW5lclNlcnZpY2UgLT4gdXR4b1NlcnZpY2UgIkludGVyYWN0cyB3aXRoIgogICAgICAgICAgICBtaW5lclNlcnZpY2UgLT4gdHJhbnNhY3Rpb25TZXJ2aWNlICJJbnRlcmFjdHMgd2l0aCIKICAgICAgICAgICAgcDJwU2VydmljZSAtPiBibG9ja2NoYWluU2VydmljZSAiSW50ZXJhY3RzIHdpdGgiCiAgICAgICAgICAgIHAycFNlcnZpY2UgLT4gdXR4b1NlcnZpY2UgIkludGVyYWN0cyB3aXRoIgogICAgICAgICAgICBwMnBTZXJ2aWNlIC0+IHRyYW5zYWN0aW9uU2VydmljZSAiSW50ZXJhY3RzIHdpdGgiCiAgICAgICAgICAgIGJsb2JTZXJ2ZXIgLT4gZGF0YWJhc2UgIlJlYWRzIGZyb20gYW5kIHdyaXRlcyB0byIKICAgICAgICAgICAgdWkgLT4gYmxvY2tjaGFpblNlcnZpY2UgIkludGVyYWN0cyB3aXRoIgogICAgICAgICAgICB1aSAtPiB1dHhvU2VydmljZSAiSW50ZXJhY3RzIHdpdGgiCiAgICAgICAgICAgIHVpIC0+IHRyYW5zYWN0aW9uU2VydmljZSAiSW50ZXJhY3RzIHdpdGgiCiAgICAgICAgICAgIHVpIC0+IHAycFNlcnZpY2UgIkludGVyYWN0cyB3aXRoIgogICAgICAgICAgICB1aSAtPiBtaW5lclNlcnZpY2UgIkludGVyYWN0cyB3aXRoIgogICAgICAgICAgICB1aSAtPiBibG9iU2VydmVyICJJbnRlcmFjdHMgd2l0aCIKICAgICAgICAgICAgYmxvY2tBc3NlbWJseVNlcnZpY2UgLT4gYmxvY2tjaGFpblNlcnZpY2UgIkludGVyYWN0cyB3aXRoIgogICAgICAgICAgICBibG9ja1ZhbGlkYXRpb25TZXJ2aWNlIC0+IGJsb2NrY2hhaW5TZXJ2aWNlICJJbnRlcmFjdHMgd2l0aCIKICAgICAgICAgICAgcHJvcGFnYXRpb25TZXJ2aWNlIC0+IHAycFNlcnZpY2UgIkludGVyYWN0cyB3aXRoIgogICAgICAgICAgICBzZWVkZXJTZXJ2aWNlIC0+IHAycFNlcnZpY2UgIkludGVyYWN0cyB3aXRoIgogICAgICAgICAgICBjb2luYmFzZVNlcnZpY2UgLT4gbWluZXJTZXJ2aWNlICJJbnRlcmFjdHMgd2l0aCIKICAgICAgICAgICAgYm9vdHN0cmFwU2VydmljZSAtPiBibG9ja2NoYWluU2VydmljZSAiSW50ZXJhY3RzIHdpdGgiCiAgICAgICAgICAgIGJvb3RzdHJhcFNlcnZpY2UgLT4gdXR4b1NlcnZpY2UgIkludGVyYWN0cyB3aXRoIgogICAgICAgICAgICBib290c3RyYXBTZXJ2aWNlIC0+IHRyYW5zYWN0aW9uU2VydmljZSAiSW50ZXJhY3RzIHdpdGgiCiAgICAgICAgICAgIGJvb3RzdHJhcFNlcnZpY2UgLT4gcDJwU2VydmljZSAiSW50ZXJhY3RzIHdpdGgiCiAgICAgICAgICAgIGJvb3RzdHJhcFNlcnZpY2UgLT4gbWluZXJTZXJ2aWNlICJJbnRlcmFjdHMgd2l0aCIKICAgICAgICAgICAgYm9vdHN0cmFwU2VydmljZSAtPiBibG9iU2VydmVyICJJbnRlcmFjdHMgd2l0aCIKICAgICAgICB9CgogICAgICAgIHVzZXIgLT4gYnN2Tm9kZSAiSW50ZXJhY3RzIHdpdGgiCiAgICB9CgogICAgdmlld3MgewogICAgICAgIHN5c3RlbUNvbnRleHQgYnN2Tm9kZSB7CiAgICAgICAgICAgIGluY2x1ZGUgKgogICAgICAgIH0KICAgICAgICBjb250YWluZXIgYnN2Tm9kZSB7CiAgICAgICAgICAgIGluY2x1ZGUgKgogICAgICAgIH0KICAgIH0KfQoK"
+  },
+  "configuration" : { },
+  "model" : {
+    "people" : [ {
+      "id" : "1",
+      "tags" : "Element,Person",
+      "properties" : {
+        "structurizr.dsl.identifier" : "user"
+      },
+      "name" : "User",
+      "relationships" : [ {
+        "id" : "44",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "535ca333-f756-412e-9ea3-36664a8590f7"
+        },
+        "sourceId" : "1",
+        "destinationId" : "2",
+        "description" : "Interacts with"
+      } ],
+      "location" : "Unspecified"
+    } ],
+    "softwareSystems" : [ {
+      "id" : "2",
+      "tags" : "Element,Software System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "bsvnode"
+      },
+      "name" : "Bitcoin SV Node",
+      "description" : "A comprehensive Bitcoin SV (BSV) node implementation",
+      "location" : "Unspecified",
+      "containers" : [ {
+        "id" : "4",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "blockchainservice"
+        },
+        "name" : "Blockchain Service",
+        "description" : "Interacts with the Bitcoin SV blockchain",
+        "relationships" : [ {
+          "id" : "17",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "c2a3fad3-43d8-4af2-a7ff-fde0809f1120"
+          },
+          "sourceId" : "4",
+          "destinationId" : "3",
+          "description" : "Reads from and writes to"
+        } ],
+        "documentation" : { }
+      }, {
+        "id" : "10",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "ui"
+        },
+        "name" : "UI Dashboard",
+        "description" : "User interface for interacting with the node",
+        "relationships" : [ {
+          "id" : "28",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "60c9ada7-17ea-4a07-b889-a6431cf47b19"
+          },
+          "sourceId" : "10",
+          "destinationId" : "5",
+          "description" : "Interacts with"
+        }, {
+          "id" : "30",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "9eb542f8-45a9-4989-b570-94aee114be24"
+          },
+          "sourceId" : "10",
+          "destinationId" : "7",
+          "description" : "Interacts with"
+        }, {
+          "id" : "32",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "43955628-208f-4322-ac6f-e18bd1638c81"
+          },
+          "sourceId" : "10",
+          "destinationId" : "9",
+          "description" : "Interacts with"
+        }, {
+          "id" : "29",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "d5f1e5aa-e109-4858-aacf-46e816ec4f87"
+          },
+          "sourceId" : "10",
+          "destinationId" : "6",
+          "description" : "Interacts with"
+        }, {
+          "id" : "27",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "f9ac9614-04a2-486f-8e2e-bbe84bbea718"
+          },
+          "sourceId" : "10",
+          "destinationId" : "4",
+          "description" : "Interacts with"
+        }, {
+          "id" : "31",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "b3c96d62-b9ef-48a0-8dd2-a16409fd6273"
+          },
+          "sourceId" : "10",
+          "destinationId" : "8",
+          "description" : "Interacts with"
+        } ],
+        "technology" : "Svelte",
+        "documentation" : { }
+      }, {
+        "id" : "9",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "blobserver"
+        },
+        "name" : "Blob Server",
+        "description" : "Stores and retrieves large data objects",
+        "relationships" : [ {
+          "id" : "26",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "f3baf3da-8547-41dd-9c21-d9c0b7329f5b"
+          },
+          "sourceId" : "9",
+          "destinationId" : "3",
+          "description" : "Reads from and writes to"
+        } ],
+        "documentation" : { }
+      }, {
+        "id" : "14",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "seederservice"
+        },
+        "name" : "Seeder Service",
+        "description" : "Seeds new transactions",
+        "relationships" : [ {
+          "id" : "36",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "8125d6de-32a5-42a4-ad9e-6aa16f7fbb18"
+          },
+          "sourceId" : "14",
+          "destinationId" : "7",
+          "description" : "Interacts with"
+        } ],
+        "documentation" : { }
+      }, {
+        "id" : "8",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "minerservice"
+        },
+        "name" : "Miner Service",
+        "description" : "Mines new blocks",
+        "relationships" : [ {
+          "id" : "21",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "e30d9a81-8220-4057-ad06-b3c33274c74d"
+          },
+          "sourceId" : "8",
+          "destinationId" : "5",
+          "description" : "Interacts with"
+        }, {
+          "id" : "20",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "c3af4978-aa89-437f-873b-7d5128f51545"
+          },
+          "sourceId" : "8",
+          "destinationId" : "4",
+          "description" : "Interacts with"
+        }, {
+          "id" : "22",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "efdf97a5-7e28-47a6-add1-fc150895d31c"
+          },
+          "sourceId" : "8",
+          "destinationId" : "6",
+          "description" : "Interacts with"
+        } ],
+        "documentation" : { }
+      }, {
+        "id" : "3",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "database"
+        },
+        "name" : "Database",
+        "description" : "Stores blockchain data, UTXOs, transaction metadata",
+        "technology" : "SQL",
+        "documentation" : { }
+      }, {
+        "id" : "5",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "utxoservice"
+        },
+        "name" : "UTXO Service",
+        "description" : "Manages UTXOs",
+        "relationships" : [ {
+          "id" : "18",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "da2cd071-f1c3-42d0-9327-63e9f85e2d98"
+          },
+          "sourceId" : "5",
+          "destinationId" : "3",
+          "description" : "Reads from and writes to"
+        } ],
+        "documentation" : { }
+      }, {
+        "id" : "13",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "propagationservice"
+        },
+        "name" : "Propagation Service",
+        "description" : "Propagates new blocks and transactions",
+        "relationships" : [ {
+          "id" : "35",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "9d757968-0883-44df-819b-cf6acb9e3a1b"
+          },
+          "sourceId" : "13",
+          "destinationId" : "7",
+          "description" : "Interacts with"
+        } ],
+        "documentation" : { }
+      }, {
+        "id" : "7",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "p2pservice"
+        },
+        "name" : "P2P Service",
+        "description" : "Handles P2P communication",
+        "relationships" : [ {
+          "id" : "23",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "3869a267-96df-4bc0-a6fa-1bfc3a1e7329"
+          },
+          "sourceId" : "7",
+          "destinationId" : "4",
+          "description" : "Interacts with"
+        }, {
+          "id" : "25",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "bc8c9ea0-d06b-4118-b5a0-deaa5de2a07d"
+          },
+          "sourceId" : "7",
+          "destinationId" : "6",
+          "description" : "Interacts with"
+        }, {
+          "id" : "24",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "74d2aaf3-ff2e-45fa-9481-50652a27eb93"
+          },
+          "sourceId" : "7",
+          "destinationId" : "5",
+          "description" : "Interacts with"
+        } ],
+        "documentation" : { }
+      }, {
+        "id" : "12",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "blockvalidationservice"
+        },
+        "name" : "Block Validation Service",
+        "description" : "Validates new blocks",
+        "relationships" : [ {
+          "id" : "34",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "235fa834-d49f-4ced-8989-2b78fa6f116b"
+          },
+          "sourceId" : "12",
+          "destinationId" : "4",
+          "description" : "Interacts with"
+        } ],
+        "documentation" : { }
+      }, {
+        "id" : "11",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "blockassemblyservice"
+        },
+        "name" : "Block Assembly Service",
+        "description" : "Assembles new blocks",
+        "relationships" : [ {
+          "id" : "33",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "3db6783c-a63b-4e06-93c9-9991450e076d"
+          },
+          "sourceId" : "11",
+          "destinationId" : "4",
+          "description" : "Interacts with"
+        } ],
+        "documentation" : { }
+      }, {
+        "id" : "15",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "coinbaseservice"
+        },
+        "name" : "Coinbase Service",
+        "description" : "Manages coinbase transactions",
+        "relationships" : [ {
+          "id" : "37",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "f7d988f7-c9e1-46a0-a259-5767284536f3"
+          },
+          "sourceId" : "15",
+          "destinationId" : "8",
+          "description" : "Interacts with"
+        } ],
+        "documentation" : { }
+      }, {
+        "id" : "6",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "transactionservice"
+        },
+        "name" : "Transaction Metadata Service",
+        "description" : "Manages transaction metadata",
+        "relationships" : [ {
+          "id" : "19",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "6bbf98c9-f5b4-43e5-a721-ecdb01c734a2"
+          },
+          "sourceId" : "6",
+          "destinationId" : "3",
+          "description" : "Reads from and writes to"
+        } ],
+        "documentation" : { }
+      }, {
+        "id" : "16",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "bootstrapservice"
+        },
+        "name" : "Bootstrap Service",
+        "description" : "Bootstraps the system",
+        "relationships" : [ {
+          "id" : "38",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "c09bcd28-ab0f-46e0-9831-b660e2b2b788"
+          },
+          "sourceId" : "16",
+          "destinationId" : "4",
+          "description" : "Interacts with"
+        }, {
+          "id" : "39",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "8180387e-8e99-4d25-bfa4-167c49e96f3a"
+          },
+          "sourceId" : "16",
+          "destinationId" : "5",
+          "description" : "Interacts with"
+        }, {
+          "id" : "40",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "6adcc325-c4b4-44b2-8091-401f1718df4d"
+          },
+          "sourceId" : "16",
+          "destinationId" : "6",
+          "description" : "Interacts with"
+        }, {
+          "id" : "42",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "55ca807c-63df-4c1c-ad2f-f25df12dcd2c"
+          },
+          "sourceId" : "16",
+          "destinationId" : "8",
+          "description" : "Interacts with"
+        }, {
+          "id" : "41",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "e179951d-5b42-421d-b820-8b9c45f37cc1"
+          },
+          "sourceId" : "16",
+          "destinationId" : "7",
+          "description" : "Interacts with"
+        }, {
+          "id" : "43",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "e05e7a71-ba84-46fc-b1b9-4c4ca9f7d90d"
+          },
+          "sourceId" : "16",
+          "destinationId" : "9",
+          "description" : "Interacts with"
+        } ],
+        "documentation" : { }
+      } ],
+      "documentation" : { }
+    } ]
+  },
+  "documentation" : { },
+  "views" : {
+    "systemContextViews" : [ {
+      "key" : "SystemContext-001",
+      "order" : 1,
+      "softwareSystemId" : "2",
+      "dimensions" : {
+        "width" : 960,
+        "height" : 1300
+      },
+      "enterpriseBoundaryVisible" : true,
+      "elements" : [ {
+        "id" : "1",
+        "x" : 255,
+        "y" : 200
+      }, {
+        "id" : "2",
+        "x" : 255,
+        "y" : 800
+      } ],
+      "relationships" : [ {
+        "id" : "44"
+      } ]
+    } ],
+    "containerViews" : [ {
+      "key" : "Container-001",
+      "order" : 2,
+      "softwareSystemId" : "2",
+      "paperSize" : "A2_Landscape",
+      "dimensions" : {
+        "width" : 5958,
+        "height" : 2758
+      },
+      "externalSoftwareSystemBoundariesVisible" : true,
+      "elements" : [ {
+        "id" : "11",
+        "x" : 5179,
+        "y" : 929
+      }, {
+        "id" : "12",
+        "x" : 4120,
+        "y" : 929
+      }, {
+        "id" : "13",
+        "x" : 4166,
+        "y" : 329
+      }, {
+        "id" : "14",
+        "x" : 3416,
+        "y" : 329
+      }, {
+        "id" : "15",
+        "x" : 1916,
+        "y" : 329
+      }, {
+        "id" : "16",
+        "x" : 1166,
+        "y" : 329
+      }, {
+        "id" : "3",
+        "x" : 2045,
+        "y" : 2129
+      }, {
+        "id" : "4",
+        "x" : 3370,
+        "y" : 1529
+      }, {
+        "id" : "5",
+        "x" : 2420,
+        "y" : 1529
+      }, {
+        "id" : "6",
+        "x" : 1670,
+        "y" : 1529
+      }, {
+        "id" : "7",
+        "x" : 3370,
+        "y" : 929
+      }, {
+        "id" : "8",
+        "x" : 2004,
+        "y" : 929
+      }, {
+        "id" : "9",
+        "x" : 329,
+        "y" : 929
+      }, {
+        "id" : "10",
+        "x" : 2666,
+        "y" : 329
+      } ],
+      "relationships" : [ {
+        "id" : "32",
+        "vertices" : [ {
+          "x" : 2516,
+          "y" : 629
+        } ]
+      }, {
+        "id" : "31"
+      }, {
+        "id" : "30"
+      }, {
+        "id" : "29",
+        "vertices" : [ {
+          "x" : 1854,
+          "y" : 929
+        }, {
+          "x" : 1854,
+          "y" : 1229
+        } ]
+      }, {
+        "id" : "28"
+      }, {
+        "id" : "27",
+        "vertices" : [ {
+          "x" : 3266,
+          "y" : 629
+        }, {
+          "x" : 4720,
+          "y" : 929
+        }, {
+          "x" : 4720,
+          "y" : 1229
+        } ]
+      }, {
+        "id" : "26",
+        "vertices" : [ {
+          "x" : 1520,
+          "y" : 1829
+        } ]
+      }, {
+        "id" : "25",
+        "vertices" : [ {
+          "x" : 2270,
+          "y" : 1529
+        } ]
+      }, {
+        "id" : "24"
+      }, {
+        "id" : "23"
+      }, {
+        "id" : "22"
+      }, {
+        "id" : "40",
+        "vertices" : [ {
+          "x" : 1312,
+          "y" : 929
+        }, {
+          "x" : 1312,
+          "y" : 1229
+        } ]
+      }, {
+        "id" : "41",
+        "vertices" : [ {
+          "x" : 1766,
+          "y" : 629
+        } ]
+      }, {
+        "id" : "42"
+      }, {
+        "id" : "43"
+      }, {
+        "id" : "21"
+      }, {
+        "id" : "20"
+      }, {
+        "id" : "18"
+      }, {
+        "id" : "17"
+      }, {
+        "id" : "37"
+      }, {
+        "id" : "36"
+      }, {
+        "id" : "35"
+      }, {
+        "id" : "34"
+      }, {
+        "id" : "33"
+      }, {
+        "id" : "38",
+        "vertices" : [ {
+          "x" : 1766,
+          "y" : 629
+        }, {
+          "x" : 2604,
+          "y" : 929
+        } ]
+      }, {
+        "id" : "39",
+        "vertices" : [ {
+          "x" : 1854,
+          "y" : 1229
+        } ]
+      }, {
+        "id" : "19"
+      } ]
+    } ],
+    "configuration" : {
+      "branding" : { },
+      "styles" : { },
+      "terminology" : { },
+      "metadataSymbols" : "SquareBrackets",
+      "lastSavedView" : "Container-001"
+    }
+  }
+}
