@@ -1,63 +1,111 @@
 workspace {
 
-    model {
-        user = person "User"
-        bsvNode = softwareSystem "Bitcoin SV Node" {
-            description "A comprehensive Bitcoin SV (BSV) node implementation"
-            database = container "Database" "Stores blockchain data, UTXOs, transaction metadata" "SQL"
-            blockchainService = container "Blockchain Service" "Interacts with the Bitcoin SV blockchain"
-            utxoService = container "UTXO Service" "Manages UTXOs"
-            transactionService = container "Transaction Metadata Service" "Manages transaction metadata"
-            p2pService = container "P2P Service" "Handles P2P communication"
-            minerService = container "Miner Service" "Mines new blocks"
-            blobServer = container "Blob Server" "Stores and retrieves large data objects"
-            ui = container "UI Dashboard" "User interface for interacting with the node" "Svelte"
-            blockAssemblyService = container "Block Assembly Service" "Assembles new blocks"
-            blockValidationService = container "Block Validation Service" "Validates new blocks"
-            propagationService = container "Propagation Service" "Propagates new blocks and transactions"
-            seederService = container "Seeder Service" "Seeds new transactions"
-            coinbaseService = container "Coinbase Service" "Manages coinbase transactions"
-            bootstrapService = container "Bootstrap Service" "Bootstraps the system"
-
-            blockchainService -> database "Reads from and writes to"
-            utxoService -> database "Reads from and writes to"
-            transactionService -> database "Reads from and writes to"
-            minerService -> blockchainService "Interacts with"
-            minerService -> utxoService "Interacts with"
-            minerService -> transactionService "Interacts with"
-            p2pService -> blockchainService "Interacts with"
-            p2pService -> utxoService "Interacts with"
-            p2pService -> transactionService "Interacts with"
-            blobServer -> database "Reads from and writes to"
-            ui -> blockchainService "Interacts with"
-            ui -> utxoService "Interacts with"
-            ui -> transactionService "Interacts with"
-            ui -> p2pService "Interacts with"
-            ui -> minerService "Interacts with"
-            ui -> blobServer "Interacts with"
-            blockAssemblyService -> blockchainService "Interacts with"
-            blockValidationService -> blockchainService "Interacts with"
-            propagationService -> p2pService "Interacts with"
-            seederService -> p2pService "Interacts with"
-            coinbaseService -> minerService "Interacts with"
-            bootstrapService -> blockchainService "Interacts with"
-            bootstrapService -> utxoService "Interacts with"
-            bootstrapService -> transactionService "Interacts with"
-            bootstrapService -> p2pService "Interacts with"
-            bootstrapService -> minerService "Interacts with"
-            bootstrapService -> blobServer "Interacts with"
-        }
-
-        user -> bsvNode "Interacts with"
+  model {
+    aliceWallet = person "Alice's Wallet" "Alice is a user of the application running the overlay network" {
+      tags "System"
+    }
+    bobWallet = person "Bob's Wallet" "Bob is a user of the application running the overlay network" {
+      tags "System"
     }
 
-    views {
-        systemContext bsvNode {
-            include *
-        }
-        container bsvNode {
-            include *
-        }
+    teranode = softwareSystem "Teranode" "Timestamps transactions into Blocks, maintains UTXO set, and enforces the rules of the Blockchain" {
+
+      blockchainService = container "Blockchain Service" "Handles operations related to the blockchain" "Golang"
+      coinbaseService = container "Coinbase Service" "Handles operations related to the coinbase transaction of a block" "Golang"
+      txValidationService = container "TX Validation Service" "Responsible for validating transactions" "Golang"
+      minerService = container "Miner Service" "Responsible for mining new blocks" "Golang"
+      propagationService = container "Propagation Service" "Responsible for the propagation of transactions and blocks across the network" "Golang"
+      blockassemblyService = container "BlockAssembly Service" "Responsible for assembling new blocks with transactions" "Golang"
+      blockvalidationService = container "BlockValidation Service" "Validates new Blocks" "Golang"
+      seederService = container "Seeder Service" "Responsible for seeding the network with transactions or blocks" "Golang"
+      p2pService = container "P2P Service" "Handles peer-to-peer network communication" "Golang"
+      publicEndpointsService = container "Public Endpoints Service" "Provides API Endppoints" "Golang"
+
+      sqlStore = container "SQL Store" "Stores transaction metadata and block data" "SQL" {
+        tags "Database"
+      }
+      memoryStore = container "In-Memory Store" "Stores UTXOs" "In-Memory" {
+        tags "Database"
+      }
+
+      txmetaStore = container "TxMeta Store" "Manages transaction metadata" "TX Metadata" {
+        tags "Database"
+      }
+      txStore = container "Tx Store" "Manages transaction metadata" "TX Metadata" {
+        tags "Database"
+      }
+      utxoStore = container "UTXO Store" "Manages UTXOs" "UTXOs" {
+        tags "Database"
+      }
+      blockHeaderStore = container "Block Header Store" "Manages Block Headers" "Block Headers" {
+        tags "Database"
+      }
+      merkleSubtreeStore = container "Merkle Subtree Store" "Manages Merkle Subtrees" "Merkle Subtrees" {
+        tags "Database"
+      }
+      tags "system"
     }
+
+    overlayNode = softwareSystem "Overlay Node" "Handles a subsection of transactions and UTXOs for a specific application" {
+
+    }
+
+
+    aliceWallet -> bobWallet "P2P transaction sending"
+    bobWallet -> overlayNode "Interacts with and submits transactions to"
+    overlayNode -> teranode "Submits transactions to"
+    propagationService -> txStore "Store all transactions until outputs have been spent"
+    propagationService -> txValidationService "Validate transactions"
+    txValidationService -> utxoStore "Update UTXO set"
+    txValidationService -> txmetaStore "Store TX metadata"
+    txValidationService -> blockassemblyService "Build Blocks"
+    blockAssemblyService -> blockchainService "Manage Chain Tips"
+    blockAssemblyService -> merkleSubtreeStore "Store Merkle Subtrees"
+    blockAssemblyService -> utxoStore "Update UTXO set"
+    blockAssemblyService -> txmetaStore "Update TX metaStore"
+    minerService -> blockassemblyService "Gets Proofs of Work"
+    propagationService -> p2pService "Propagates transactions and blocks"
+    blockValidationService -> blockchainService "Update chain tips"
+    merkleSubtreeStore -> blockValidationService "get new Merkle subtrees"
+    p2pService -> propagationService "Receives propagated transactions and blocks"
+    seederService -> p2pService "Seeds the network"
+  }
+
+  views {
+
+
+
+
+    systemlandscape "SystemLandscape" {
+      include *
+      autoLayout lr
+    }
+
+    container teranode {
+      include *
+      autoLayout
+    }
+
+    styles {
+      element "Software System" {
+        background #1168bd
+        color #ffffff
+      }
+      element "Person" {
+        shape person
+        background #08427b
+        color #ffffff
+      }
+      element "Container" {
+        background #438dd5
+        color #ffffff
+      }
+      element "database" {
+        background #0ba789
+        color #ffffff
+        shape cylinder
+      }
+    }
+  }
 }
 
