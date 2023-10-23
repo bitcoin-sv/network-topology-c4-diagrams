@@ -1,7 +1,7 @@
 workspace {
 
   model {
-    aliceWallet = person "Alice's Wallet" "Alice is a user of the application running the overlay network" {
+    aliceWallet = person "Alice's Wallet" "Alice is a user of the application running the overlay networks" {
       tags "System"
     }
     bobWallet = person "Bob's Wallet" "Bob is a user of the application running the overlay network" {
