@@ -50,10 +50,15 @@ workspace {
 
     }
 
+    mNet = softwareSystem "Multicast Network" "Handles incoming transactions and subtrees for the Node network" {
+      tags "MNet"
+    }
+
 
     aliceWallet -> bobWallet "P2P transaction sending"
     bobWallet -> overlayNode "Interacts with and submits transactions to"
-    overlayNode -> teranode "Submits transactions to"
+    overlayNode -> mNet "Submits transactions to"
+    mNet -> teranode "Multicasts transactions to"
     propagationService -> txStore "Store all transactions until outputs have been spent"
     propagationService -> txValidationService "Validate transactions"
     txValidationService -> utxoStore "Update UTXO set"
@@ -73,17 +78,12 @@ workspace {
 
   views {
 
-
-
-
     systemlandscape "SystemLandscape" {
       include *
-      autoLayout lr
     }
 
     container teranode {
       include *
-      autoLayout
     }
 
     styles {
@@ -104,6 +104,12 @@ workspace {
         background #0ba789
         color #ffffff
         shape cylinder
+      }
+
+      element "MNet" {
+        background #1168background
+        color #ffffff
+        shape cloud
       }
     }
   }
