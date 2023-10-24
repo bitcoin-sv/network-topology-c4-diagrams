@@ -1,10 +1,7 @@
 workspace {
 
   model {
-    aliceWallet = person "Alice's Wallet" "Alice is a user of the application running the overlay networks" {
-      tags "System"
-    }
-    bobWallet = person "Bob's Wallet" "Bob is a user of the application running the overlay network" {
+    wallet = person "A Wallet" "A User's wallet" {
       tags "System"
     }
 
@@ -55,8 +52,7 @@ workspace {
     }
 
 
-    aliceWallet -> bobWallet "P2P transaction sending"
-    bobWallet -> overlayNode "Interacts with and submits transactions to"
+    wallet -> overlayNode "Interacts with and submits transactions to"
     overlayNode -> mNet "Submits transactions to"
     mNet -> teranode "Multicasts transactions to"
     propagationService -> txStore "Store all transactions until outputs have been spent"
@@ -80,16 +76,19 @@ workspace {
 
     systemlandscape "SystemLandscape" {
       include *
+      autolayout lr
     }
 
     container teranode {
       include *
+      autolayout lr
     }
 
     styles {
       element "Software System" {
         background #1168bd
         color #ffffff
+        shape roundedBox
       }
       element "Person" {
         shape person
@@ -97,6 +96,7 @@ workspace {
         color #ffffff
       }
       element "Container" {
+        shape roundedBox
         background #438dd5
         color #ffffff
       }
@@ -107,9 +107,9 @@ workspace {
       }
 
       element "MNet" {
-        background #1168background
+        background #1168bd
         color #ffffff
-        shape cloud
+        shape roundedBox
       }
     }
   }
