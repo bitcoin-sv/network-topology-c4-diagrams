@@ -2,10 +2,10 @@
   "id" : 1,
   "name" : "Name",
   "description" : "Description",
-  "lastModifiedDate" : "2023-10-23T18:05:03Z",
+  "lastModifiedDate" : "2023-10-25T19:43:12Z",
   "lastModifiedAgent" : "structurizr-javascript",
   "properties" : {
-    "structurizr.dsl" : "d29ya3NwYWNlIHsKCiAgbW9kZWwgewogICAgd2FsbGV0ID0gcGVyc29uICJBIFdhbGxldCIgIkEgVXNlcidzIHdhbGxldCIgewogICAgICB0YWdzICJTeXN0ZW0iCiAgICB9CgogICAgdGVyYW5vZGUgPSBzb2Z0d2FyZVN5c3RlbSAiVGVyYW5vZGUiICJUaW1lc3RhbXBzIHRyYW5zYWN0aW9ucyBpbnRvIEJsb2NrcywgbWFpbnRhaW5zIFVUWE8gc2V0LCBhbmQgZW5mb3JjZXMgdGhlIHJ1bGVzIG9mIHRoZSBCbG9ja2NoYWluIiB7CgogICAgICBibG9ja2NoYWluU2VydmljZSA9IGNvbnRhaW5lciAiQmxvY2tjaGFpbiBTZXJ2aWNlIiAiSGFuZGxlcyBvcGVyYXRpb25zIHJlbGF0ZWQgdG8gdGhlIGJsb2NrY2hhaW4iICJHb2xhbmciCiAgICAgIGNvaW5iYXNlU2VydmljZSA9IGNvbnRhaW5lciAiQ29pbmJhc2UgU2VydmljZSIgIkhhbmRsZXMgb3BlcmF0aW9ucyByZWxhdGVkIHRvIHRoZSBjb2luYmFzZSB0cmFuc2FjdGlvbiBvZiBhIGJsb2NrIiAiR29sYW5nIgogICAgICB0eFZhbGlkYXRpb25TZXJ2aWNlID0gY29udGFpbmVyICJUWCBWYWxpZGF0aW9uIFNlcnZpY2UiICJSZXNwb25zaWJsZSBmb3IgdmFsaWRhdGluZyB0cmFuc2FjdGlvbnMiICJHb2xhbmciCiAgICAgIG1pbmVyU2VydmljZSA9IGNvbnRhaW5lciAiTWluZXIgU2VydmljZSIgIlJlc3BvbnNpYmxlIGZvciBtaW5pbmcgbmV3IGJsb2NrcyIgIkdvbGFuZyIKICAgICAgcHJvcGFnYXRpb25TZXJ2aWNlID0gY29udGFpbmVyICJQcm9wYWdhdGlvbiBTZXJ2aWNlIiAiUmVzcG9uc2libGUgZm9yIHRoZSBwcm9wYWdhdGlvbiBvZiB0cmFuc2FjdGlvbnMgYW5kIGJsb2NrcyBhY3Jvc3MgdGhlIG5ldHdvcmsiICJHb2xhbmciCiAgICAgIGJsb2NrYXNzZW1ibHlTZXJ2aWNlID0gY29udGFpbmVyICJCbG9ja0Fzc2VtYmx5IFNlcnZpY2UiICJSZXNwb25zaWJsZSBmb3IgYXNzZW1ibGluZyBuZXcgYmxvY2tzIHdpdGggdHJhbnNhY3Rpb25zIiAiR29sYW5nIgogICAgICBibG9ja3ZhbGlkYXRpb25TZXJ2aWNlID0gY29udGFpbmVyICJCbG9ja1ZhbGlkYXRpb24gU2VydmljZSIgIlZhbGlkYXRlcyBuZXcgQmxvY2tzIiAiR29sYW5nIgogICAgICBzZWVkZXJTZXJ2aWNlID0gY29udGFpbmVyICJTZWVkZXIgU2VydmljZSIgIlJlc3BvbnNpYmxlIGZvciBzZWVkaW5nIHRoZSBuZXR3b3JrIHdpdGggdHJhbnNhY3Rpb25zIG9yIGJsb2NrcyIgIkdvbGFuZyIKICAgICAgcDJwU2VydmljZSA9IGNvbnRhaW5lciAiUDJQIFNlcnZpY2UiICJIYW5kbGVzIHBlZXItdG8tcGVlciBuZXR3b3JrIGNvbW11bmljYXRpb24iICJHb2xhbmciCiAgICAgIHB1YmxpY0VuZHBvaW50c1NlcnZpY2UgPSBjb250YWluZXIgIlB1YmxpYyBFbmRwb2ludHMgU2VydmljZSIgIlByb3ZpZGVzIEFQSSBFbmRwcG9pbnRzIiAiR29sYW5nIgoKICAgICAgc3FsU3RvcmUgPSBjb250YWluZXIgIlNRTCBTdG9yZSIgIlN0b3JlcyB0cmFuc2FjdGlvbiBtZXRhZGF0YSBhbmQgYmxvY2sgZGF0YSIgIlNRTCIgewogICAgICAgIHRhZ3MgIkRhdGFiYXNlIgogICAgICB9CiAgICAgIG1lbW9yeVN0b3JlID0gY29udGFpbmVyICJJbi1NZW1vcnkgU3RvcmUiICJTdG9yZXMgVVRYT3MiICJJbi1NZW1vcnkiIHsKICAgICAgICB0YWdzICJEYXRhYmFzZSIKICAgICAgfQoKICAgICAgdHhtZXRhU3RvcmUgPSBjb250YWluZXIgIlR4TWV0YSBTdG9yZSIgIk1hbmFnZXMgdHJhbnNhY3Rpb24gbWV0YWRhdGEiICJUWCBNZXRhZGF0YSIgewogICAgICAgIHRhZ3MgIkRhdGFiYXNlIgogICAgICB9CiAgICAgIHR4U3RvcmUgPSBjb250YWluZXIgIlR4IFN0b3JlIiAiTWFuYWdlcyB0cmFuc2FjdGlvbiBtZXRhZGF0YSIgIlRYIE1ldGFkYXRhIiB7CiAgICAgICAgdGFncyAiRGF0YWJhc2UiCiAgICAgIH0KICAgICAgdXR4b1N0b3JlID0gY29udGFpbmVyICJVVFhPIFN0b3JlIiAiTWFuYWdlcyBVVFhPcyIgIlVUWE9zIiB7CiAgICAgICAgdGFncyAiRGF0YWJhc2UiCiAgICAgIH0KICAgICAgYmxvY2tIZWFkZXJTdG9yZSA9IGNvbnRhaW5lciAiQmxvY2sgSGVhZGVyIFN0b3JlIiAiTWFuYWdlcyBCbG9jayBIZWFkZXJzIiAiQmxvY2sgSGVhZGVycyIgewogICAgICAgIHRhZ3MgIkRhdGFiYXNlIgogICAgICB9CiAgICAgIG1lcmtsZVN1YnRyZWVTdG9yZSA9IGNvbnRhaW5lciAiTWVya2xlIFN1YnRyZWUgU3RvcmUiICJNYW5hZ2VzIE1lcmtsZSBTdWJ0cmVlcyIgIk1lcmtsZSBTdWJ0cmVlcyIgewogICAgICAgIHRhZ3MgIkRhdGFiYXNlIgogICAgICB9CiAgICAgIHRhZ3MgInN5c3RlbSIKICAgIH0KCiAgICBvdmVybGF5Tm9kZSA9IHNvZnR3YXJlU3lzdGVtICJPdmVybGF5IE5vZGUiICJIYW5kbGVzIGEgc3Vic2VjdGlvbiBvZiB0cmFuc2FjdGlvbnMgYW5kIFVUWE9zIGZvciBhIHNwZWNpZmljIGFwcGxpY2F0aW9uIiB7CgogICAgfQoKICAgIG1OZXQgPSBzb2Z0d2FyZVN5c3RlbSAiTXVsdGljYXN0IE5ldHdvcmsiICJIYW5kbGVzIGluY29taW5nIHRyYW5zYWN0aW9ucyBhbmQgc3VidHJlZXMgZm9yIHRoZSBOb2RlIG5ldHdvcmsiIHsKICAgICAgdGFncyAiTU5ldCIKICAgIH0KCgogICAgd2FsbGV0IC0+IG92ZXJsYXlOb2RlICJJbnRlcmFjdHMgd2l0aCBhbmQgc3VibWl0cyB0cmFuc2FjdGlvbnMgdG8iCiAgICBvdmVybGF5Tm9kZSAtPiBtTmV0ICJTdWJtaXRzIHRyYW5zYWN0aW9ucyB0byIKICAgIG1OZXQgLT4gdGVyYW5vZGUgIk11bHRpY2FzdHMgdHJhbnNhY3Rpb25zIHRvIgogICAgcHJvcGFnYXRpb25TZXJ2aWNlIC0+IHR4U3RvcmUgIlN0b3JlIGFsbCB0cmFuc2FjdGlvbnMgdW50aWwgb3V0cHV0cyBoYXZlIGJlZW4gc3BlbnQiCiAgICBwcm9wYWdhdGlvblNlcnZpY2UgLT4gdHhWYWxpZGF0aW9uU2VydmljZSAiVmFsaWRhdGUgdHJhbnNhY3Rpb25zIgogICAgdHhWYWxpZGF0aW9uU2VydmljZSAtPiB1dHhvU3RvcmUgIlVwZGF0ZSBVVFhPIHNldCIKICAgIHR4VmFsaWRhdGlvblNlcnZpY2UgLT4gdHhtZXRhU3RvcmUgIlN0b3JlIFRYIG1ldGFkYXRhIgogICAgdHhWYWxpZGF0aW9uU2VydmljZSAtPiBibG9ja2Fzc2VtYmx5U2VydmljZSAiQnVpbGQgQmxvY2tzIgogICAgYmxvY2tBc3NlbWJseVNlcnZpY2UgLT4gYmxvY2tjaGFpblNlcnZpY2UgIk1hbmFnZSBDaGFpbiBUaXBzIgogICAgYmxvY2tBc3NlbWJseVNlcnZpY2UgLT4gbWVya2xlU3VidHJlZVN0b3JlICJTdG9yZSBNZXJrbGUgU3VidHJlZXMiCiAgICBibG9ja0Fzc2VtYmx5U2VydmljZSAtPiB1dHhvU3RvcmUgIlVwZGF0ZSBVVFhPIHNldCIKICAgIGJsb2NrQXNzZW1ibHlTZXJ2aWNlIC0+IHR4bWV0YVN0b3JlICJVcGRhdGUgVFggbWV0YVN0b3JlIgogICAgbWluZXJTZXJ2aWNlIC0+IGJsb2NrYXNzZW1ibHlTZXJ2aWNlICJHZXRzIFByb29mcyBvZiBXb3JrIgogICAgcHJvcGFnYXRpb25TZXJ2aWNlIC0+IHAycFNlcnZpY2UgIlByb3BhZ2F0ZXMgdHJhbnNhY3Rpb25zIGFuZCBibG9ja3MiCiAgICBibG9ja1ZhbGlkYXRpb25TZXJ2aWNlIC0+IGJsb2NrY2hhaW5TZXJ2aWNlICJVcGRhdGUgY2hhaW4gdGlwcyIKICAgIG1lcmtsZVN1YnRyZWVTdG9yZSAtPiBibG9ja1ZhbGlkYXRpb25TZXJ2aWNlICJnZXQgbmV3IE1lcmtsZSBzdWJ0cmVlcyIKICAgIHAycFNlcnZpY2UgLT4gcHJvcGFnYXRpb25TZXJ2aWNlICJSZWNlaXZlcyBwcm9wYWdhdGVkIHRyYW5zYWN0aW9ucyBhbmQgYmxvY2tzIgogICAgc2VlZGVyU2VydmljZSAtPiBwMnBTZXJ2aWNlICJTZWVkcyB0aGUgbmV0d29yayIKICB9CgogIHZpZXdzIHsKCiAgICBzeXN0ZW1sYW5kc2NhcGUgIlN5c3RlbUxhbmRzY2FwZSIgewogICAgICBpbmNsdWRlICoKICAgICAgYXV0b2xheW91dCBscgogICAgfQoKICAgIGNvbnRhaW5lciB0ZXJhbm9kZSB7CiAgICAgIGluY2x1ZGUgKgogICAgICBhdXRvbGF5b3V0IGxyCiAgICB9CgogICAgc3R5bGVzIHsKICAgICAgZWxlbWVudCAiU29mdHdhcmUgU3lzdGVtIiB7CiAgICAgICAgYmFja2dyb3VuZCAjMTE2OGJkCiAgICAgICAgY29sb3IgI2ZmZmZmZgogICAgICAgIHNoYXBlIHJvdW5kZWRCb3gKICAgICAgfQogICAgICBlbGVtZW50ICJQZXJzb24iIHsKICAgICAgICBzaGFwZSBwZXJzb24KICAgICAgICBiYWNrZ3JvdW5kICMwODQyN2IKICAgICAgICBjb2xvciAjZmZmZmZmCiAgICAgIH0KICAgICAgZWxlbWVudCAiQ29udGFpbmVyIiB7CiAgICAgICAgc2hhcGUgcm91bmRlZEJveAogICAgICAgIGJhY2tncm91bmQgIzQzOGRkNQogICAgICAgIGNvbG9yICNmZmZmZmYKICAgICAgfQogICAgICBlbGVtZW50ICJkYXRhYmFzZSIgewogICAgICAgIGJhY2tncm91bmQgIzBiYTc4OQogICAgICAgIGNvbG9yICNmZmZmZmYKICAgICAgICBzaGFwZSBjeWxpbmRlcgogICAgICB9CgogICAgICBlbGVtZW50ICJNTmV0IiB7CiAgICAgICAgYmFja2dyb3VuZCAjMTE2OGJkCiAgICAgICAgY29sb3IgI2ZmZmZmZgogICAgICAgIHNoYXBlIHJvdW5kZWRCb3gKICAgICAgfQogICAgfQogIH0KfQoK"
+    "structurizr.dsl" : "d29ya3NwYWNlIHsKCiAgbW9kZWwgewogICAgd2FsbGV0ID0gcGVyc29uICJBIFdhbGxldCIgIkEgVXNlcidzIHdhbGxldCIgewogICAgICB0YWdzICJTeXN0ZW0iCiAgICB9CgogICAgbm9kZU5ldHdvcmsgPSBzb2Z0d2FyZVN5c3RlbSAiTm9kZSBOZXR3b3JrIChUZXJhbm9kZSkiICJUaW1lc3RhbXBzIHRyYW5zYWN0aW9ucyBpbnRvIEJsb2NrcywgbWFpbnRhaW5zIFVUWE8gc2V0LCBhbmQgZW5mb3JjZXMgdGhlIHJ1bGVzIG9mIHRoZSBCbG9ja2NoYWluIiB7CgogICAgICBwcm9wYWdhdGlvblNlcnZpY2UgPSBjb250YWluZXIgIlByb3BhZ2F0aW9uIFNlcnZpY2UiICJSZXNwb25zaWJsZSBmb3IgdGhlIHByb3BhZ2F0aW9uIG9mIHRyYW5zYWN0aW9ucyBhbmQgYmxvY2tzIGFjcm9zcyB0aGUgbmV0d29yayIgIkdvbGFuZyIKICAgICAgcHJvcFR4VmFsQnJva2VyID0gY29udGFpbmVyICJQcm9wYWdhdGlvbi1UeFZhbGlkYXRpb24gTWVzc2FnZSBCcm9rZXIiICJSZXNwb25zaWJsZSBmb3IgYnJva2VyaW5nIHRyYW5zYWN0aW9ucyBmcm9tIFByb3BhZ2F0aW9uIFNlcnZpY2VzIHRvIFRYIFZhbGlkYXRpb24gU2VydmljZXMiICJLYWZrYSIKICAgICAgdHhWYWxpZGF0aW9uU2VydmljZSA9IGNvbnRhaW5lciAiVFggVmFsaWRhdGlvbiBTZXJ2aWNlIiAiUmVzcG9uc2libGUgZm9yIHZhbGlkYXRpbmcgdHJhbnNhY3Rpb25zIiAiR29sYW5nIgogICAgICB0eFZhbEJsb2NrQXNzQnJva2VyID0gY29udGFpbmVyICJUeFZhbGlkYXRpb24tQmxvY2tBc3NlbWJseSBNZXNzYWdlIEJyb2tlciIgIlJlc3BvbnNpYmxlIGZvciBicm9rZXJpbmcgVFhJRHMgZnJvbSB0aGUgVFggVmFsaWRhdGlvbiBTZXJ2aWNlcyB0byB0aGUgQmxvY2sgQXNzZW1ibHkgU2VydmljZXMiCiAgICAgIGJsb2NrYXNzZW1ibHlTZXJ2aWNlID0gY29udGFpbmVyICJCbG9ja0Fzc2VtYmx5IFNlcnZpY2UiICJSZXNwb25zaWJsZSBmb3IgYXNzZW1ibGluZyBuZXcgYmxvY2tzIHdpdGggdHJhbnNhY3Rpb25zIiAiR29sYW5nIgogICAgICBibG9ja2NoYWluU2VydmljZSA9IGNvbnRhaW5lciAiQmxvY2tjaGFpbiBTZXJ2aWNlIiAiSGFuZGxlcyBvcGVyYXRpb25zIHJlbGF0ZWQgdG8gdGhlIGJsb2NrY2hhaW4iICJHb2xhbmciCiAgICAgIGJsb2NrdmFsaWRhdGlvblNlcnZpY2UgPSBjb250YWluZXIgIkJsb2NrVmFsaWRhdGlvbiBTZXJ2aWNlIiAiVmFsaWRhdGVzIG5ldyBCbG9ja3MiICJHb2xhbmciCiAgICAgIHB1YmxpY0VuZHBvaW50c1NlcnZpY2UgPSBjb250YWluZXIgIlB1YmxpYyBFbmRwb2ludHMgU2VydmljZSIgIlByb3ZpZGVzIEFQSSBFbmRwcG9pbnRzIiAiR29sYW5nIgoKICAgICAgdHhtZXRhU3RvcmUgPSBjb250YWluZXIgIlR4TWV0YSBTdG9yZSIgIk1hbmFnZXMgdHJhbnNhY3Rpb24gbWV0YWRhdGEiICJUWCBNZXRhZGF0YSIgewogICAgICAgIHRhZ3MgIkRhdGFiYXNlIgogICAgICB9CiAgICAgIHR4U3RvcmUgPSBjb250YWluZXIgIlR4IFN0b3JlIiAiTWFuYWdlcyB0cmFuc2FjdGlvbiBtZXRhZGF0YSIgIlRYIE1ldGFkYXRhIiB7CiAgICAgICAgdGFncyAiRGF0YWJhc2UiCiAgICAgIH0KICAgICAgdXR4b1N0b3JlID0gY29udGFpbmVyICJVVFhPIFN0b3JlIiAiTWFuYWdlcyBVVFhPcyIgIlVUWE9zIiB7CiAgICAgICAgdGFncyAiRGF0YWJhc2UiCiAgICAgIH0KICAgICAgYmxvY2tIZWFkZXJTdG9yZSA9IGNvbnRhaW5lciAiQmxvY2sgSGVhZGVyIFN0b3JlIiAiTWFuYWdlcyBCbG9jayBIZWFkZXJzIiAiQmxvY2sgSGVhZGVycyIgewogICAgICAgIHRhZ3MgIkRhdGFiYXNlIgogICAgICB9CiAgICAgIG1lcmtsZVN1YnRyZWVTdG9yZSA9IGNvbnRhaW5lciAiTWVya2xlIFN1YnRyZWUgU3RvcmUiICJNYW5hZ2VzIE1lcmtsZSBTdWJ0cmVlcyIgIk1lcmtsZSBTdWJ0cmVlcyIgewogICAgICAgIHRhZ3MgIkRhdGFiYXNlIgogICAgICB9CiAgICAgIHRhZ3MgInN5c3RlbSIKICAgIH0KCiAgICBsZWdhY3lQMnBTZXJ2aWNlID0gc29mdHdhcmVTeXN0ZW0gIkxlZ2FjeSBQMlAgU2VydmljZSIgIkhhbmRsZXMgcGVlci10by1wZWVyIG5ldHdvcmsgY29tbXVuaWNhdGlvbiIgIkdvbGFuZyIKICAgIHR4TG9va3VwU2VydmljZSA9IHNvZnR3YXJlU3lzdGVtICJUWC9UWE8gTG9va3VwIFNlcnZpY2UiICJBbGxvd3MgbGVnYWN5IGxvb2t1cCBvZiB0cmFuc2FjdGlvbnMgYW5kIHRyYW5zYWN0aW9uIG91dHB1dHMiICJHb2xhbmciCiAgICBwZWVyU2VydmljZSA9IHNvZnR3YXJlU3lzdGVtICJQZWVyIFNlcnZpY2UiICJBbGxvd3MgSVB2NCBQZWVyIGNvbm5lY3Rpb25zIiAiR29sYW5nIgogICAgY29pbmJhc2VPdmVybGF5Tm9kZSA9IHNvZnR3YXJlU3lzdGVtICJDb2luYmFzZSBPdmVybGF5IE5vZGUiICJIYW5kbGVzIG9wZXJhdGlvbnMgcmVsYXRlZCB0byB0aGUgY29pbmJhc2UgdHJhbnNhY3Rpb24gb2YgYSBibG9jayIgIkdvbGFuZyIKICAgIHR4U3VibWlzc2lvblNlcnZpY2UgPSBzb2Z0d2FyZVN5c3RlbSAiVFggU3VibWlzc2lvbiBTZXJ2aWNlIChBUkMpIiAiU3VibWl0cyB0cmFuc2FjdGlvbnMgdG8gdGhlIE5vZGUgbmV0d29yayB2aWEgSVB2NiBtdWx0aWNhc3QiICJHb2xhbmciCiAgICBiYW5saXN0U2VydmljZSA9IHNvZnR3YXJlU3lzdGVtICJCYW5saXN0IFNlcnZpY2UiICJNYWludGFpbnMgYSBkeW5hbWljIGJhbmxpc3QgcmVsYXRlZCB0byByZWplY3RlZCBUWHMsIEJsb2NrcywgYW5kIFN1YnRyZWVzIiAiR29sYW5nIgogICAgdXR4b0xvb2t1cFNlcnZpY2UgPSBzb2Z0d2FyZVN5c3RlbSAiVVRYTyBMb29rdXAgU2VydmljZSIgIlByb3ZpZGVzIGFuIEFQSSB0byBsb29rdXAgdGhlIHN0YXR1c2VzIG9mIFVUWE9zIiAiR29sYW5nIgogICAgaGFzaGVycyA9IHNvZnR3YXJlU3lzdGVtICJIYXNoaW5nIHBvb2wgdG8gZmluZCBQcm9vZi1vZi1Xb3JrIgoKICAgIG92ZXJsYXlOZXR3b3JrID0gc29mdHdhcmVTeXN0ZW0gIkFuIGFwcGxpY2F0aW9uIGFuZC9vciB0cmFuc2FjdGlvbiB0eXBlKHMpIHNwZWNpZmljIG92ZXJsYXkgbmV0d29yayIKCiAgICBtTmV0ID0gc29mdHdhcmVTeXN0ZW0gIk11bHRpY2FzdCBOZXR3b3JrIiAiSGFuZGxlcyBpbmNvbWluZyB0cmFuc2FjdGlvbnMgYW5kIHN1YnRyZWVzIGZvciB0aGUgTm9kZSBuZXR3b3JrIiB7CiAgICAgIHRhZ3MgIk1OZXQiCiAgICB9CgoKCiAgICB3YWxsZXQgLT4gb3ZlcmxheU5ldHdvcmsgIkludGVyYWN0cyB3aXRoIGFuZCBzdWJtaXRzIHRyYW5zYWN0aW9ucyB0byIKICAgIG92ZXJsYXlOZXR3b3JrIC0+IG1OZXQgIlN1Ym1pdHMgdHJhbnNhY3Rpb25zIHRvIgogICAgdHhTdWJtaXNzaW9uU2VydmljZSAtPiBtTmV0ICJTdWJtaXRzIHRyYW5zYWN0aW9ucyB0byIKICAgIG1OZXQgLT4gbm9kZU5ldHdvcmsgIk11bHRpY2FzdHMgdHJhbnNhY3Rpb25zIHRvIE5vZGUgTmV0d29yayIKICAgIG1OZXQgLT4gcHJvcGFnYXRpb25TZXJ2aWNlICJNdWx0aWNhc3RzIGV4dGVuZGVkIHRyYW5zYWN0aW9ucyB0byIKICAgIHByb3BhZ2F0aW9uU2VydmljZSAtPiBwcm9wVHhWYWxCcm9rZXIgIlNlbmQgZXh0ZW5kZWQgdHJhbnNhY3Rpb25zIHRvIgogICAgcHJvcFR4VmFsQnJva2VyIC0+IHR4VmFsaWRhdGlvblNlcnZpY2UgIkJyb2tlciBleHRlbmRlZCB0cmFuc2FjdGlvbnMgdG8iCiAgICB0eFZhbGlkYXRpb25TZXJ2aWNlIC0+IHV0eG9TdG9yZSAiVXBkYXRlIFVUWE8gc2V0IgogICAgdHhWYWxpZGF0aW9uU2VydmljZSAtPiB0eG1ldGFTdG9yZSAiU3RvcmUgVFggbWV0YWRhdGEiCiAgICB0eFZhbGlkYXRpb25TZXJ2aWNlIC0+IHR4VmFsQmxvY2tBc3NCcm9rZXIgIlNlbmQgVFhJRHMgdG8iCiAgICB0eFZhbEJsb2NrQXNzQnJva2VyIC0+IGJsb2NrQXNzZW1ibHlTZXJ2aWNlICJCcm9rZXIgVFhJRHMgdG8iCiAgICBibG9ja0Fzc2VtYmx5U2VydmljZSAtPiBoYXNoZXJzICJTZW5kIEJsb2NrIENhbmRpZGF0ZSB0byB8IFJlY2VpdmUgUHJvb2Ytb2YtV29yayBmcm9tIgogICAgYmxvY2tBc3NlbWJseVNlcnZpY2UgLT4gYmxvY2tjaGFpblNlcnZpY2UgIk1hbmFnZSBDaGFpbiBUaXBzIgogICAgYmxvY2tBc3NlbWJseVNlcnZpY2UgLT4gbWVya2xlU3VidHJlZVN0b3JlICJTdG9yZSBNZXJrbGUgU3VidHJlZXMiCiAgICBibG9ja0Fzc2VtYmx5U2VydmljZSAtPiB1dHhvU3RvcmUgIlVwZGF0ZSBVVFhPIHNldCIKICAgIGJsb2NrQXNzZW1ibHlTZXJ2aWNlIC0+IHR4bWV0YVN0b3JlICJVcGRhdGUgVFggbWV0YVN0b3JlIgogICAgcHJvcGFnYXRpb25TZXJ2aWNlIC0+IGxlZ2FjeVAycFNlcnZpY2UgIlByb3BhZ2F0ZXMgdHJhbnNhY3Rpb25zIGFuZCBibG9ja3MiCiAgICBibG9ja1ZhbGlkYXRpb25TZXJ2aWNlIC0+IGJsb2NrY2hhaW5TZXJ2aWNlICJVcGRhdGUgY2hhaW4gdGlwcyIKICAgIG1lcmtsZVN1YnRyZWVTdG9yZSAtPiBibG9ja1ZhbGlkYXRpb25TZXJ2aWNlICJnZXQgbmV3IE1lcmtsZSBzdWJ0cmVlcyIKICAgIGxlZ2FjeVAycFNlcnZpY2UgLT4gcHJvcGFnYXRpb25TZXJ2aWNlICJSZWNlaXZlcyBwcm9wYWdhdGVkIHRyYW5zYWN0aW9ucyBhbmQgYmxvY2tzIgogIH0KCiAgdmlld3MgewoKICAgIHN5c3RlbWxhbmRzY2FwZSAiU3lzdGVtTGFuZHNjYXBlIiB7CiAgICAgIGluY2x1ZGUgd2FsbGV0IG92ZXJsYXlOZXR3b3JrIG1OZXQgbm9kZU5ldHdvcmsKICAgICAgYXV0b2xheW91dCBscgogICAgfQoKICAgIGNvbnRhaW5lciAibm9kZU5ldHdvcmsiIHsKICAgICAgaW5jbHVkZSAqCiAgICAgIGF1dG9sYXlvdXQgbHIKICAgIH0KCiAgICBzdHlsZXMgewogICAgICBlbGVtZW50ICJTb2Z0d2FyZSBTeXN0ZW0iIHsKICAgICAgICBiYWNrZ3JvdW5kICMxMTY4YmQKICAgICAgICBjb2xvciAjZmZmZmZmCiAgICAgICAgc2hhcGUgcm91bmRlZEJveAogICAgICB9CiAgICAgIGVsZW1lbnQgIlBlcnNvbiIgewogICAgICAgIHNoYXBlIHBlcnNvbgogICAgICAgIGJhY2tncm91bmQgIzA4NDI3YgogICAgICAgIGNvbG9yICNmZmZmZmYKICAgICAgfQogICAgICBlbGVtZW50ICJDb250YWluZXIiIHsKICAgICAgICBzaGFwZSByb3VuZGVkQm94CiAgICAgICAgYmFja2dyb3VuZCAjNDM4ZGQ1CiAgICAgICAgY29sb3IgI2ZmZmZmZgogICAgICB9CiAgICAgIGVsZW1lbnQgImRhdGFiYXNlIiB7CiAgICAgICAgYmFja2dyb3VuZCAjMGJhNzg5CiAgICAgICAgY29sb3IgI2ZmZmZmZgogICAgICAgIHNoYXBlIGN5bGluZGVyCiAgICAgIH0KCiAgICAgIGVsZW1lbnQgIk1OZXQiIHsKICAgICAgICBiYWNrZ3JvdW5kICMxMTY4YmQKICAgICAgICBjb2xvciAjZmZmZmZmCiAgICAgICAgc2hhcGUgaGV4YWdvbgogICAgICB9CiAgICB9CiAgfQp9Cgo="
   },
   "configuration" : { },
   "model" : {
@@ -18,33 +18,81 @@
       "name" : "A Wallet",
       "description" : "A User's wallet",
       "relationships" : [ {
-        "id" : "22",
+        "id" : "26",
         "tags" : "Relationship",
         "properties" : {
-          "structurizr.dsl.identifier" : "9744a230-9746-4677-8bc7-620dab7e0b3f"
+          "structurizr.dsl.identifier" : "55192686-78a3-4667-8aa4-a7ed5bd052eb"
         },
         "sourceId" : "1",
-        "destinationId" : "20",
+        "destinationId" : "24",
         "description" : "Interacts with and submits transactions to"
       } ],
       "location" : "Unspecified"
     } ],
     "softwareSystems" : [ {
-      "id" : "20",
+      "id" : "24",
       "tags" : "Element,Software System",
       "properties" : {
-        "structurizr.dsl.identifier" : "overlaynode"
+        "structurizr.dsl.identifier" : "overlaynetwork"
       },
-      "name" : "Overlay Node",
-      "description" : "Handles a subsection of transactions and UTXOs for a specific application",
+      "name" : "An application and/or transaction type(s) specific overlay network",
       "relationships" : [ {
-        "id" : "23",
+        "id" : "27",
         "tags" : "Relationship",
         "properties" : {
-          "structurizr.dsl.identifier" : "a8f817e4-d2e1-4e84-b099-d855a432ac1f"
+          "structurizr.dsl.identifier" : "8e3ce0c5-a66a-4665-bfb6-c11053587c1a"
+        },
+        "sourceId" : "24",
+        "destinationId" : "25",
+        "description" : "Submits transactions to"
+      } ],
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "25",
+      "tags" : "Element,Software System,MNet",
+      "properties" : {
+        "structurizr.dsl.identifier" : "mnet"
+      },
+      "name" : "Multicast Network",
+      "description" : "Handles incoming transactions and subtrees for the Node network",
+      "relationships" : [ {
+        "id" : "30",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "e176d10e-8b1e-44b3-b9d0-7628db6b928e"
+        },
+        "sourceId" : "25",
+        "destinationId" : "3",
+        "description" : "Multicasts extended transactions to"
+      }, {
+        "id" : "29",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "b3e981df-1518-44cd-8933-183ef355e2f3"
+        },
+        "sourceId" : "25",
+        "destinationId" : "2",
+        "description" : "Multicasts transactions to Node Network"
+      } ],
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "20",
+      "tags" : "Element,Software System,Golang",
+      "properties" : {
+        "structurizr.dsl.identifier" : "txsubmissionservice"
+      },
+      "name" : "TX Submission Service (ARC)",
+      "description" : "Submits transactions to the Node network via IPv6 multicast",
+      "relationships" : [ {
+        "id" : "28",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "2269d25d-1083-4a01-b775-62f9d1ab14b6"
         },
         "sourceId" : "20",
-        "destinationId" : "21",
+        "destinationId" : "25",
         "description" : "Submits transactions to"
       } ],
       "location" : "Unspecified",
@@ -53,43 +101,36 @@
       "id" : "2",
       "tags" : "Element,Software System,system",
       "properties" : {
-        "structurizr.dsl.identifier" : "teranode"
+        "structurizr.dsl.identifier" : "nodenetwork"
       },
-      "name" : "Teranode",
+      "name" : "Node Network (Teranode)",
       "description" : "Timestamps transactions into Blocks, maintains UTXO set, and enforces the rules of the Blockchain",
+      "relationships" : [ {
+        "id" : "44",
+        "sourceId" : "2",
+        "destinationId" : "16",
+        "description" : "Propagates transactions and blocks",
+        "linkedRelationshipId" : "43"
+      }, {
+        "id" : "38",
+        "sourceId" : "2",
+        "destinationId" : "23",
+        "description" : "Send Block Candidate to | Receive Proof-of-Work from",
+        "linkedRelationshipId" : "37"
+      } ],
       "location" : "Unspecified",
       "containers" : [ {
-        "id" : "9",
+        "id" : "10",
         "tags" : "Element,Container",
         "properties" : {
-          "structurizr.dsl.identifier" : "blockvalidationservice"
+          "structurizr.dsl.identifier" : "publicendpointsservice"
         },
-        "name" : "BlockValidation Service",
-        "description" : "Validates new Blocks",
-        "relationships" : [ {
-          "id" : "36",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "34d264ac-81e4-4cb7-8449-ff1c87a53d19"
-          },
-          "sourceId" : "9",
-          "destinationId" : "3",
-          "description" : "Update chain tips"
-        } ],
+        "name" : "Public Endpoints Service",
+        "description" : "Provides API Endppoints",
         "technology" : "Golang",
         "documentation" : { }
       }, {
-        "id" : "16",
-        "tags" : "Element,Container,Database",
-        "properties" : {
-          "structurizr.dsl.identifier" : "txstore"
-        },
-        "name" : "Tx Store",
-        "description" : "Manages transaction metadata",
-        "technology" : "TX Metadata",
-        "documentation" : { }
-      }, {
-        "id" : "17",
+        "id" : "13",
         "tags" : "Element,Container,Database",
         "properties" : {
           "structurizr.dsl.identifier" : "utxostore"
@@ -99,7 +140,160 @@
         "technology" : "UTXOs",
         "documentation" : { }
       }, {
+        "id" : "4",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "proptxvalbroker"
+        },
+        "name" : "Propagation-TxValidation Message Broker",
+        "description" : "Responsible for brokering transactions from Propagation Services to TX Validation Services",
+        "relationships" : [ {
+          "id" : "32",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "90926e52-1614-4f91-b66e-7b2030d908e2"
+          },
+          "sourceId" : "4",
+          "destinationId" : "5",
+          "description" : "Broker extended transactions to"
+        } ],
+        "technology" : "Kafka",
+        "documentation" : { }
+      }, {
+        "id" : "5",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "txvalidationservice"
+        },
+        "name" : "TX Validation Service",
+        "description" : "Responsible for validating transactions",
+        "relationships" : [ {
+          "id" : "33",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "65d51520-9ee0-49cd-8dd8-96c400c1c027"
+          },
+          "sourceId" : "5",
+          "destinationId" : "13",
+          "description" : "Update UTXO set"
+        }, {
+          "id" : "34",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "c97be26b-6ae3-472a-8f00-9e9ec3e00272"
+          },
+          "sourceId" : "5",
+          "destinationId" : "11",
+          "description" : "Store TX metadata"
+        }, {
+          "id" : "35",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "09d052c5-0b61-4352-a5b1-8910b7d0c68c"
+          },
+          "sourceId" : "5",
+          "destinationId" : "6",
+          "description" : "Send TXIDs to"
+        } ],
+        "technology" : "Golang",
+        "documentation" : { }
+      }, {
         "id" : "15",
+        "tags" : "Element,Container,Database",
+        "properties" : {
+          "structurizr.dsl.identifier" : "merklesubtreestore"
+        },
+        "name" : "Merkle Subtree Store",
+        "description" : "Manages Merkle Subtrees",
+        "relationships" : [ {
+          "id" : "46",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "1a81a83d-8e73-4e28-873f-292ea21eddf0"
+          },
+          "sourceId" : "15",
+          "destinationId" : "9",
+          "description" : "get new Merkle subtrees"
+        } ],
+        "technology" : "Merkle Subtrees",
+        "documentation" : { }
+      }, {
+        "id" : "6",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "txvalblockassbroker"
+        },
+        "name" : "TxValidation-BlockAssembly Message Broker",
+        "description" : "Responsible for brokering TXIDs from the TX Validation Services to the Block Assembly Services",
+        "relationships" : [ {
+          "id" : "36",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "c6414b45-7e19-44cf-bb64-28bdfc012a37"
+          },
+          "sourceId" : "6",
+          "destinationId" : "7",
+          "description" : "Broker TXIDs to"
+        } ],
+        "documentation" : { }
+      }, {
+        "id" : "7",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "blockassemblyservice"
+        },
+        "name" : "BlockAssembly Service",
+        "description" : "Responsible for assembling new blocks with transactions",
+        "relationships" : [ {
+          "id" : "40",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "175be103-227b-4381-a553-e6724cdf3863"
+          },
+          "sourceId" : "7",
+          "destinationId" : "15",
+          "description" : "Store Merkle Subtrees"
+        }, {
+          "id" : "41",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "73b29f56-4e5a-4fb8-91ee-262e184ccc43"
+          },
+          "sourceId" : "7",
+          "destinationId" : "13",
+          "description" : "Update UTXO set"
+        }, {
+          "id" : "37",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "22bf0609-6d5b-4ca9-b1b7-29043964d7f2"
+          },
+          "sourceId" : "7",
+          "destinationId" : "23",
+          "description" : "Send Block Candidate to | Receive Proof-of-Work from"
+        }, {
+          "id" : "42",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "4c892fa5-622e-458d-bd29-d6c03107dac7"
+          },
+          "sourceId" : "7",
+          "destinationId" : "11",
+          "description" : "Update TX metaStore"
+        }, {
+          "id" : "39",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "3c71ba3f-1528-4310-98b2-b7d080a555b2"
+          },
+          "sourceId" : "7",
+          "destinationId" : "8",
+          "description" : "Manage Chain Tips"
+        } ],
+        "technology" : "Golang",
+        "documentation" : { }
+      }, {
+        "id" : "11",
         "tags" : "Element,Container,Database",
         "properties" : {
           "structurizr.dsl.identifier" : "txmetastore"
@@ -112,132 +306,33 @@
         "id" : "3",
         "tags" : "Element,Container",
         "properties" : {
-          "structurizr.dsl.identifier" : "blockchainservice"
-        },
-        "name" : "Blockchain Service",
-        "description" : "Handles operations related to the blockchain",
-        "technology" : "Golang",
-        "documentation" : { }
-      }, {
-        "id" : "10",
-        "tags" : "Element,Container",
-        "properties" : {
-          "structurizr.dsl.identifier" : "seederservice"
-        },
-        "name" : "Seeder Service",
-        "description" : "Responsible for seeding the network with transactions or blocks",
-        "relationships" : [ {
-          "id" : "39",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "ef1f8696-48f3-4700-8196-adfe6cbe435f"
-          },
-          "sourceId" : "10",
-          "destinationId" : "11",
-          "description" : "Seeds the network"
-        } ],
-        "technology" : "Golang",
-        "documentation" : { }
-      }, {
-        "id" : "7",
-        "tags" : "Element,Container",
-        "properties" : {
           "structurizr.dsl.identifier" : "propagationservice"
         },
         "name" : "Propagation Service",
         "description" : "Responsible for the propagation of transactions and blocks across the network",
         "relationships" : [ {
-          "id" : "35",
+          "id" : "43",
           "tags" : "Relationship",
           "properties" : {
-            "structurizr.dsl.identifier" : "7c6ec061-880a-4059-8e7e-d380f1fb1eb3"
+            "structurizr.dsl.identifier" : "a12e6180-be36-4e02-9eac-06ecb2d76ebf"
           },
-          "sourceId" : "7",
-          "destinationId" : "11",
+          "sourceId" : "3",
+          "destinationId" : "16",
           "description" : "Propagates transactions and blocks"
         }, {
-          "id" : "25",
+          "id" : "31",
           "tags" : "Relationship",
           "properties" : {
-            "structurizr.dsl.identifier" : "20f5b90d-255d-4319-96d5-7f7c87395a48"
+            "structurizr.dsl.identifier" : "48cecc78-10ba-498f-988e-d1519190529e"
           },
-          "sourceId" : "7",
-          "destinationId" : "16",
-          "description" : "Store all transactions until outputs have been spent"
-        }, {
-          "id" : "26",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "6d048f12-6bd0-4d18-9919-a710ae1aadcb"
-          },
-          "sourceId" : "7",
-          "destinationId" : "5",
-          "description" : "Validate transactions"
+          "sourceId" : "3",
+          "destinationId" : "4",
+          "description" : "Send extended transactions to"
         } ],
         "technology" : "Golang",
         "documentation" : { }
       }, {
-        "id" : "13",
-        "tags" : "Element,Container,Database",
-        "properties" : {
-          "structurizr.dsl.identifier" : "sqlstore"
-        },
-        "name" : "SQL Store",
-        "description" : "Stores transaction metadata and block data",
-        "technology" : "SQL",
-        "documentation" : { }
-      }, {
-        "id" : "6",
-        "tags" : "Element,Container",
-        "properties" : {
-          "structurizr.dsl.identifier" : "minerservice"
-        },
-        "name" : "Miner Service",
-        "description" : "Responsible for mining new blocks",
-        "relationships" : [ {
-          "id" : "34",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "9a221854-71e1-4fa2-b1cf-d22982bb4a7b"
-          },
-          "sourceId" : "6",
-          "destinationId" : "8",
-          "description" : "Gets Proofs of Work"
-        } ],
-        "technology" : "Golang",
-        "documentation" : { }
-      }, {
-        "id" : "19",
-        "tags" : "Element,Container,Database",
-        "properties" : {
-          "structurizr.dsl.identifier" : "merklesubtreestore"
-        },
-        "name" : "Merkle Subtree Store",
-        "description" : "Manages Merkle Subtrees",
-        "relationships" : [ {
-          "id" : "37",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "a0348675-b02a-458d-9a7c-24ebe9f11f58"
-          },
-          "sourceId" : "19",
-          "destinationId" : "9",
-          "description" : "get new Merkle subtrees"
-        } ],
-        "technology" : "Merkle Subtrees",
-        "documentation" : { }
-      }, {
-        "id" : "12",
-        "tags" : "Element,Container",
-        "properties" : {
-          "structurizr.dsl.identifier" : "publicendpointsservice"
-        },
-        "name" : "Public Endpoints Service",
-        "description" : "Provides API Endppoints",
-        "technology" : "Golang",
-        "documentation" : { }
-      }, {
-        "id" : "18",
+        "id" : "14",
         "tags" : "Element,Container,Database",
         "properties" : {
           "structurizr.dsl.identifier" : "blockheaderstore"
@@ -247,149 +342,129 @@
         "technology" : "Block Headers",
         "documentation" : { }
       }, {
+        "id" : "9",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "blockvalidationservice"
+        },
+        "name" : "BlockValidation Service",
+        "description" : "Validates new Blocks",
+        "relationships" : [ {
+          "id" : "45",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "94250735-8d9f-4004-8219-747611fe60d9"
+          },
+          "sourceId" : "9",
+          "destinationId" : "8",
+          "description" : "Update chain tips"
+        } ],
+        "technology" : "Golang",
+        "documentation" : { }
+      }, {
         "id" : "8",
         "tags" : "Element,Container",
         "properties" : {
-          "structurizr.dsl.identifier" : "blockassemblyservice"
+          "structurizr.dsl.identifier" : "blockchainservice"
         },
-        "name" : "BlockAssembly Service",
-        "description" : "Responsible for assembling new blocks with transactions",
-        "relationships" : [ {
-          "id" : "32",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "cda45cd4-7d28-43c9-aa4a-b8eda5eb8e36"
-          },
-          "sourceId" : "8",
-          "destinationId" : "17",
-          "description" : "Update UTXO set"
-        }, {
-          "id" : "33",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "9ce61957-d844-4c9a-bdd3-d6c3b417f25c"
-          },
-          "sourceId" : "8",
-          "destinationId" : "15",
-          "description" : "Update TX metaStore"
-        }, {
-          "id" : "30",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "01c24666-a002-413e-a585-0f911dcc1204"
-          },
-          "sourceId" : "8",
-          "destinationId" : "3",
-          "description" : "Manage Chain Tips"
-        }, {
-          "id" : "31",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "88cda1c5-1add-4aa2-a987-cd06cbd90951"
-          },
-          "sourceId" : "8",
-          "destinationId" : "19",
-          "description" : "Store Merkle Subtrees"
-        } ],
+        "name" : "Blockchain Service",
+        "description" : "Handles operations related to the blockchain",
         "technology" : "Golang",
         "documentation" : { }
       }, {
-        "id" : "14",
+        "id" : "12",
         "tags" : "Element,Container,Database",
         "properties" : {
-          "structurizr.dsl.identifier" : "memorystore"
+          "structurizr.dsl.identifier" : "txstore"
         },
-        "name" : "In-Memory Store",
-        "description" : "Stores UTXOs",
-        "technology" : "In-Memory",
-        "documentation" : { }
-      }, {
-        "id" : "5",
-        "tags" : "Element,Container",
-        "properties" : {
-          "structurizr.dsl.identifier" : "txvalidationservice"
-        },
-        "name" : "TX Validation Service",
-        "description" : "Responsible for validating transactions",
-        "relationships" : [ {
-          "id" : "28",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "6a1583be-f501-4242-a514-31aba61f72b6"
-          },
-          "sourceId" : "5",
-          "destinationId" : "15",
-          "description" : "Store TX metadata"
-        }, {
-          "id" : "29",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "6e07526c-655e-4f7b-a284-2ef55d31af7f"
-          },
-          "sourceId" : "5",
-          "destinationId" : "8",
-          "description" : "Build Blocks"
-        }, {
-          "id" : "27",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "010e1324-9a5d-445f-92be-b71afb15a88c"
-          },
-          "sourceId" : "5",
-          "destinationId" : "17",
-          "description" : "Update UTXO set"
-        } ],
-        "technology" : "Golang",
-        "documentation" : { }
-      }, {
-        "id" : "11",
-        "tags" : "Element,Container",
-        "properties" : {
-          "structurizr.dsl.identifier" : "p2pservice"
-        },
-        "name" : "P2P Service",
-        "description" : "Handles peer-to-peer network communication",
-        "relationships" : [ {
-          "id" : "38",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "66665fc9-7143-48f2-b92a-579bd4cc77cc"
-          },
-          "sourceId" : "11",
-          "destinationId" : "7",
-          "description" : "Receives propagated transactions and blocks"
-        } ],
-        "technology" : "Golang",
-        "documentation" : { }
-      }, {
-        "id" : "4",
-        "tags" : "Element,Container",
-        "properties" : {
-          "structurizr.dsl.identifier" : "coinbaseservice"
-        },
-        "name" : "Coinbase Service",
-        "description" : "Handles operations related to the coinbase transaction of a block",
-        "technology" : "Golang",
+        "name" : "Tx Store",
+        "description" : "Manages transaction metadata",
+        "technology" : "TX Metadata",
         "documentation" : { }
       } ],
       "documentation" : { }
     }, {
-      "id" : "21",
-      "tags" : "Element,Software System,MNet",
+      "id" : "23",
+      "tags" : "Element,Software System",
       "properties" : {
-        "structurizr.dsl.identifier" : "mnet"
+        "structurizr.dsl.identifier" : "hashers"
       },
-      "name" : "Multicast Network",
-      "description" : "Handles incoming transactions and subtrees for the Node network",
+      "name" : "Hashing pool to find Proof-of-Work",
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "18",
+      "tags" : "Element,Software System,Golang",
+      "properties" : {
+        "structurizr.dsl.identifier" : "peerservice"
+      },
+      "name" : "Peer Service",
+      "description" : "Allows IPv4 Peer connections",
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "21",
+      "tags" : "Element,Software System,Golang",
+      "properties" : {
+        "structurizr.dsl.identifier" : "banlistservice"
+      },
+      "name" : "Banlist Service",
+      "description" : "Maintains a dynamic banlist related to rejected TXs, Blocks, and Subtrees",
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "19",
+      "tags" : "Element,Software System,Golang",
+      "properties" : {
+        "structurizr.dsl.identifier" : "coinbaseoverlaynode"
+      },
+      "name" : "Coinbase Overlay Node",
+      "description" : "Handles operations related to the coinbase transaction of a block",
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "17",
+      "tags" : "Element,Software System,Golang",
+      "properties" : {
+        "structurizr.dsl.identifier" : "txlookupservice"
+      },
+      "name" : "TX/TXO Lookup Service",
+      "description" : "Allows legacy lookup of transactions and transaction outputs",
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "22",
+      "tags" : "Element,Software System,Golang",
+      "properties" : {
+        "structurizr.dsl.identifier" : "utxolookupservice"
+      },
+      "name" : "UTXO Lookup Service",
+      "description" : "Provides an API to lookup the statuses of UTXOs",
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "16",
+      "tags" : "Element,Software System,Golang",
+      "properties" : {
+        "structurizr.dsl.identifier" : "legacyp2pservice"
+      },
+      "name" : "Legacy P2P Service",
+      "description" : "Handles peer-to-peer network communication",
       "relationships" : [ {
-        "id" : "24",
+        "id" : "47",
         "tags" : "Relationship",
         "properties" : {
-          "structurizr.dsl.identifier" : "829b540c-6b01-4ebe-bfcb-71a35783b857"
+          "structurizr.dsl.identifier" : "cc2ebfae-af34-47bd-bbc0-32c0051869cf"
         },
-        "sourceId" : "21",
+        "sourceId" : "16",
+        "destinationId" : "3",
+        "description" : "Receives propagated transactions and blocks"
+      }, {
+        "id" : "48",
+        "sourceId" : "16",
         "destinationId" : "2",
-        "description" : "Multicasts transactions to"
+        "description" : "Receives propagated transactions and blocks",
+        "linkedRelationshipId" : "47"
       } ],
       "location" : "Unspecified",
       "documentation" : { }
@@ -400,10 +475,6 @@
     "systemLandscapeViews" : [ {
       "key" : "SystemLandscape",
       "order" : 1,
-      "dimensions" : {
-        "width" : 3050,
-        "height" : 800
-      },
       "automaticLayout" : {
         "implementation" : "Graphviz",
         "rankDirection" : "LeftRight",
@@ -415,27 +486,27 @@
       "enterpriseBoundaryVisible" : true,
       "elements" : [ {
         "id" : "1",
-        "x" : 199,
-        "y" : 199
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "24",
+        "x" : 0,
+        "y" : 0
       }, {
         "id" : "2",
-        "x" : 2399,
-        "y" : 249
+        "x" : 0,
+        "y" : 0
       }, {
-        "id" : "20",
-        "x" : 899,
-        "y" : 249
-      }, {
-        "id" : "21",
-        "x" : 1649,
-        "y" : 249
+        "id" : "25",
+        "x" : 0,
+        "y" : 0
       } ],
       "relationships" : [ {
-        "id" : "24"
+        "id" : "29"
       }, {
-        "id" : "23"
+        "id" : "27"
       }, {
-        "id" : "22"
+        "id" : "26"
       } ]
     } ],
     "containerViews" : [ {
@@ -443,8 +514,8 @@
       "order" : 2,
       "softwareSystemId" : "2",
       "dimensions" : {
-        "width" : 6140,
-        "height" : 3835
+        "width" : 6870,
+        "height" : 3120
       },
       "automaticLayout" : {
         "implementation" : "Graphviz",
@@ -457,119 +528,124 @@
       "externalSoftwareSystemBoundariesVisible" : true,
       "elements" : [ {
         "id" : "11",
-        "x" : 969,
-        "y" : 244
+        "x" : 4699,
+        "y" : 2020
+      }, {
+        "id" : "23",
+        "x" : 4699,
+        "y" : 2620
       }, {
         "id" : "12",
-        "x" : 219,
-        "y" : 844
+        "x" : 949,
+        "y" : 820
       }, {
         "id" : "13",
-        "x" : 219,
-        "y" : 1444
+        "x" : 4699,
+        "y" : 511
+      }, {
+        "id" : "25",
+        "x" : 199,
+        "y" : 1720
       }, {
         "id" : "14",
-        "x" : 219,
-        "y" : 2044
+        "x" : 949,
+        "y" : 1420
       }, {
         "id" : "15",
-        "x" : 3969,
-        "y" : 315
+        "x" : 4699,
+        "y" : 1420
       }, {
         "id" : "16",
-        "x" : 2469,
-        "y" : 244
-      }, {
-        "id" : "17",
-        "x" : 3969,
-        "y" : 915
-      }, {
-        "id" : "18",
-        "x" : 219,
-        "y" : 2644
-      }, {
-        "id" : "19",
-        "x" : 3969,
-        "y" : 1823
+        "x" : 199,
+        "y" : 2320
       }, {
         "id" : "3",
-        "x" : 5469,
-        "y" : 1598
+        "x" : 949,
+        "y" : 2020
       }, {
         "id" : "4",
-        "x" : 219,
-        "y" : 3244
+        "x" : 1699,
+        "y" : 2020
       }, {
         "id" : "5",
-        "x" : 2469,
-        "y" : 844
+        "x" : 2449,
+        "y" : 1795
       }, {
         "id" : "6",
-        "x" : 2469,
-        "y" : 1444
+        "x" : 3199,
+        "y" : 1470
       }, {
         "id" : "7",
-        "x" : 1719,
-        "y" : 244
+        "x" : 3949,
+        "y" : 1449
       }, {
         "id" : "8",
-        "x" : 3219,
-        "y" : 1352
+        "x" : 6199,
+        "y" : 1195
       }, {
         "id" : "9",
-        "x" : 4719,
-        "y" : 1823
+        "x" : 5449,
+        "y" : 1420
       }, {
         "id" : "10",
-        "x" : 219,
-        "y" : 244
+        "x" : 949,
+        "y" : 220
       } ],
       "relationships" : [ {
+        "id" : "40"
+      }, {
+        "id" : "41"
+      }, {
+        "id" : "42"
+      }, {
+        "id" : "43",
+        "vertices" : [ {
+          "x" : 743,
+          "y" : 2180
+        } ]
+      }, {
         "id" : "32"
       }, {
         "id" : "31"
       }, {
-        "id" : "30",
+        "id" : "30"
+      }, {
+        "id" : "37",
         "vertices" : [ {
-          "x" : 5169,
-          "y" : 1673
+          "x" : 4699,
+          "y" : 2499
         } ]
-      }, {
-        "id" : "29"
-      }, {
-        "id" : "28"
-      }, {
-        "id" : "27"
-      }, {
-        "id" : "37"
-      }, {
-        "id" : "26"
       }, {
         "id" : "36"
       }, {
-        "id" : "25"
-      }, {
-        "id" : "35",
-        "vertices" : [ {
-          "x" : 1569,
-          "y" : 244
-        } ]
+        "id" : "35"
       }, {
         "id" : "34"
       }, {
         "id" : "33",
         "vertices" : [ {
-          "x" : 3969,
-          "y" : 765
+          "x" : 3199,
+          "y" : 1320
         } ]
       }, {
-        "id" : "38",
+        "id" : "45"
+      }, {
+        "id" : "46"
+      }, {
+        "id" : "47",
         "vertices" : [ {
-          "x" : 1569,
-          "y" : 544
+          "x" : 854,
+          "y" : 2459
         } ]
       }, {
-        "id" : "39"
+        "id" : "39",
+        "vertices" : [ {
+          "x" : 4699,
+          "y" : 1270
+        }, {
+          "x" : 5899,
+          "y" : 1270
+        } ]
       } ]
     } ],
     "configuration" : {
@@ -599,12 +675,12 @@
           "tag" : "MNet",
           "background" : "#1168bd",
           "color" : "#ffffff",
-          "shape" : "RoundedBox"
+          "shape" : "Hexagon"
         } ]
       },
       "terminology" : { },
       "metadataSymbols" : "SquareBrackets",
-      "lastSavedView" : "SystemLandscape"
+      "lastSavedView" : "Container-001"
     }
   }
 }
