@@ -19,6 +19,7 @@ workspace {
           Services to TX Validation Services"
           technology "Kafka"
           tags "MessageBroker"
+          nodeNetwork.propagationService -> this "Send extended TXs to"
         }
 
         txValidationService = container "TX Validation Service" {
@@ -32,11 +33,10 @@ workspace {
           Services to the Block Assembly Services"
           tags "MessageBroker"
           technology "Golang"
-          this -> nodeNetwork.txValBlockAssBroker "Send TXIDs to"
+          nodeNetwork.txValidationService -> this "Send TXIDs to"
         }
 
         blockassemblyService = container "BlockAssembly Service" "Responsible for assembling new blocks with transactions" "Golang" {
-
           nodeNetwork.txValBlockAssBroker -> this "Broker TXIDs to"
         }
 
@@ -109,13 +109,6 @@ workspace {
           description "Responsible for validating transactions"
           technology "Golang"
           overlayNetwork.propTxValBroker -> this "Broker extended transactions to"
-        }
-
-        txValBlockAssBroker = container "TxValidation-BlockAssembly Message Broker" {
-          description "Responsible for brokering TXIDs from the TX Validation \
-          Services to the Block Assembly Services"
-          technology "Kafka"
-          tags "MessageBroker"
         }
 
         blockchainService = container "Blockchain Service" {
@@ -262,16 +255,19 @@ workspace {
 
     container "nodeNetwork" {
       include *
-      autolayout lr
+      //autolayout lr
     }
 
     container "overlayNetwork" {
       include *
-      autolayout lr
+      //autolayout lr
     }
 
     styles {
-      element "Software System" {
+      softwareSystem {
+        border {
+          thickness 4
+        }
         background #1168bd
         color #ffffff
         shape roundedBox
