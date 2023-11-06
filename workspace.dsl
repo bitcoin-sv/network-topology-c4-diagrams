@@ -36,30 +36,30 @@ workspace {
           Services to the Block Assembly Services"
           tags "MessageBroker"
           technology "Golang"
-          nodeNetwork.txValidationService -> this "Send TXIDs to"
+          txValidationService -> this "Send TXIDs to"
         }
 
         blockassemblyService = container "BlockAssembly Service" \
         "Responsible for assembling new blocks with transactions" "Golang" {
-          nodeNetwork.txValBlockAssBroker -> this "Broker TXIDs to"
+          txValBlockAssBroker -> this "Broker TXIDs to"
         }
 
         blockchainService = container "Blockchain Service" \
         "Handles operations related to the blockchain" "Golang" {
-          nodeNetwork.blockAssemblyService -> this \
+          blockAssemblyService -> this \
           "Notify Block found | <-Get best Block Header"
         }
 
         blockvalidationService = container "BlockValidation Service" {
           description "Validates new Blocks"
           technology "Golang"
-          this -> nodeNetwork.blockchainService "Valid Block found"
+          this -> blockchainService "Valid Block found"
         }
 
         publicEndpointsService = container "Public Endpoints Service" {
           description "Provides API Endppoints"
           technology "Golang"
-          this -> nodeNetwork.blockValidationService \
+          this -> blockValidationService \
           "Block found| <-Notify Block found"
         }
 
@@ -67,9 +67,9 @@ workspace {
         txmetaStore = container "TxMeta Store" \
         "Manages transaction metadata" "TX Metadata" {
           tags "Database"
-          this -> nodeNetwork.txmetaStore "Store TX metadata"
-          nodeNetwork.blockAssemblyService -> this "Update TX Meta Store"
-          nodeNetwork.blockValidationService -> this "Update TX Meta Meta Store"
+          txValidationService -> this "Store TX metadata"
+          blockAssemblyService -> this "Update TX Meta Store"
+          blockValidationService -> this "Update TX Meta Meta Store"
         }
 
         txStore = container "Tx Store" "Manages transaction metadata" "TX Metadata" {
@@ -78,25 +78,25 @@ workspace {
 
         utxoStore = container "UTXO Store" "Manages UTXOs" "UTXOs" {
           tags "Database"
-          this -> nodeNetwork.utxoStore "Validate against UTXO set | Update UTXO set"
-          nodeNetwork.blockAssemblyService -> this "Update UTXO set"
+          txValidationService -> this "Validate against UTXO set | Update UTXO set"
+          blockAssemblyService -> this "Update UTXO set"
         }
 
         blockHeaderStore = container "Block Header Store" {
           description "Manages Block Headers"
           technology "Block Headers"
           tags "Database"
-          nodeNetwork.blockchainService -> this \
+          blockchainService -> this \
           "Update Block Header Store | <-Get best Block Header"
         }
 
         merkleSubtreeStore = container "Merkle Subtree Store" \
         "Manages Merkle Subtrees" "Merkle Subtrees" {
           tags "Database"
-          nodeNetwork.blockAssemblyService -> this \
+          blockAssemblyService -> this \
           "Store Merkle Subtrees | <-Get new Merkle Subtrees"
-          nodeNetwork.blockValidationService -> this "Get new Merkle Subtrees"
-          nodeNetwork.publicEndpointsService -> this "Subtree received"
+          blockValidationService -> this "Get new Merkle Subtrees"
+          publicEndpointsService -> this "Subtree received"
         }
     }
 
@@ -152,14 +152,14 @@ workspace {
         blockHeaderStore = container "Block Header Store" \
         "Manages Block Headers" "Block Headers" {
           tags "Database"
-          overlayNetwork.blockchainService -> this \
+          blockchainService -> this \
           "Update Block Header Store | <-Get best Block Header"
         }
 
         merkleSubtreeStore = container "Merkle Subtree Store" \
         "Manages Merkle Subtrees" "Merkle Subtrees" {
           tags "Database"
-          overlayNetwork.publicEndpointsService -> this "Subtree received"
+          publicEndpointsService -> this "Subtree received"
         }
 
     }
