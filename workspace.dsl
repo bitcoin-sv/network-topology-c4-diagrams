@@ -8,6 +8,9 @@ workspace {
     transactions into Blocks, maintains UTXO set, and enforces the rules  \
     of the Blockchain" {
 
+        tags "SoftwareSystem"
+
+
         propagationService = container "Propagation Service" {
           description "Responsible for the propagation of transactions and \
           blocks across the network"
@@ -19,13 +22,13 @@ workspace {
           Services to TX Validation Services"
           technology "Kafka"
           tags "MessageBroker"
-          nodeNetwork.propagationService -> this "Send extended TXs to"
+          propagationService -> this "Send extended TXs to"
         }
 
         txValidationService = container "TX Validation Service" {
           description "Responsible for validating transactions"
           technology "Golang"
-          nodeNetwork.propTxValBroker -> this "Broker extended transactions to"
+          propTxValBroker -> this "Broker extended TXs to"
         }
 
         txValBlockAssBroker = container "TxValidation-BlockAssembly Message Broker" {
@@ -36,12 +39,15 @@ workspace {
           nodeNetwork.txValidationService -> this "Send TXIDs to"
         }
 
-        blockassemblyService = container "BlockAssembly Service" "Responsible for assembling new blocks with transactions" "Golang" {
+        blockassemblyService = container "BlockAssembly Service" \
+        "Responsible for assembling new blocks with transactions" "Golang" {
           nodeNetwork.txValBlockAssBroker -> this "Broker TXIDs to"
         }
 
-        blockchainService = container "Blockchain Service" "Handles operations related to the blockchain" "Golang" {
-          nodeNetwork.blockAssemblyService -> this "Notify Block found | <-Get best Block Header"
+        blockchainService = container "Blockchain Service" \
+        "Handles operations related to the blockchain" "Golang" {
+          nodeNetwork.blockAssemblyService -> this \
+          "Notify Block found | <-Get best Block Header"
         }
 
         blockvalidationService = container "BlockValidation Service" {
@@ -53,11 +59,13 @@ workspace {
         publicEndpointsService = container "Public Endpoints Service" {
           description "Provides API Endppoints"
           technology "Golang"
-          this -> nodeNetwork.blockValidationService "Block found| <-Notify Block found"
+          this -> nodeNetwork.blockValidationService \
+          "Block found| <-Notify Block found"
         }
 
         //Teranode Data Stores
-        txmetaStore = container "TxMeta Store" "Manages transaction metadata" "TX Metadata" {
+        txmetaStore = container "TxMeta Store" \
+        "Manages transaction metadata" "TX Metadata" {
           tags "Database"
           this -> nodeNetwork.txmetaStore "Store TX metadata"
           nodeNetwork.blockAssemblyService -> this "Update TX Meta Store"
@@ -78,12 +86,15 @@ workspace {
           description "Manages Block Headers"
           technology "Block Headers"
           tags "Database"
-          nodeNetwork.blockchainService -> this "Update Block Header Store | <-Get best Block Header"
+          nodeNetwork.blockchainService -> this \
+          "Update Block Header Store | <-Get best Block Header"
         }
 
-        merkleSubtreeStore = container "Merkle Subtree Store" "Manages Merkle Subtrees" "Merkle Subtrees" {
+        merkleSubtreeStore = container "Merkle Subtree Store" \
+        "Manages Merkle Subtrees" "Merkle Subtrees" {
           tags "Database"
-          nodeNetwork.blockAssemblyService -> this "Store Merkle Subtrees | <-Get new Merkle Subtrees"
+          nodeNetwork.blockAssemblyService -> this \
+          "Store Merkle Subtrees | <-Get new Merkle Subtrees"
           nodeNetwork.blockValidationService -> this "Get new Merkle Subtrees"
           nodeNetwork.publicEndpointsService -> this "Subtree received"
         }
@@ -92,8 +103,11 @@ workspace {
 //  Overlay Node
     overlayNetwork = softwareSystem "Overlay Network (Overlay Node)" {
 
+      tags "SoftwareSystem"
+
         propagationService = container "Propagation Service" {
-          description "Responsible for the propagation of transactions and blocks across the network"
+          description \
+          "Responsible for the propagation of transactions and blocks across the network"
           technology "Golang"
         }
 
@@ -122,7 +136,8 @@ workspace {
         }
 
         //Teranode Data Stores
-        txmetaStore = container "TxMeta Store" "Manages transaction metadata" "TX Metadata" {
+        txmetaStore = container "TxMeta Store" \
+        "Manages transaction metadata" "TX Metadata" {
           tags "Database"
         }
 
@@ -134,12 +149,15 @@ workspace {
           tags "Database"
         }
 
-        blockHeaderStore = container "Block Header Store" "Manages Block Headers" "Block Headers" {
+        blockHeaderStore = container "Block Header Store" \
+        "Manages Block Headers" "Block Headers" {
           tags "Database"
-          overlayNetwork.blockchainService -> this "Update Block Header Store | <-Get best Block Header"
+          overlayNetwork.blockchainService -> this \
+          "Update Block Header Store | <-Get best Block Header"
         }
 
-        merkleSubtreeStore = container "Merkle Subtree Store" "Manages Merkle Subtrees" "Merkle Subtrees" {
+        merkleSubtreeStore = container "Merkle Subtree Store" \
+        "Manages Merkle Subtrees" "Merkle Subtrees" {
           tags "Database"
           overlayNetwork.publicEndpointsService -> this "Subtree received"
         }
@@ -177,7 +195,8 @@ workspace {
     }
 
     banlistService = softwareSystem "Banlist Service" {
-      description "Maintains a dynamic banlist related to rejected TXs, Blocks, and Subtrees"
+      description \
+      "Maintains a dynamic banlist related to rejected TXs, Blocks, and Subtrees"
       this -> nodeNetwork.utxoStore "Updates UTXO Store"
       this -> overlayNetwork.utxoStore "Updates UTXO Store"
     }
@@ -191,13 +210,15 @@ workspace {
     }
 
     hashers = softwareSystem "Hashing pool to find Proof-of-Work" {
-      nodeNetwork.blockAssemblyService -> this "Send Block Candidate to | Receive Proof-of-Work from"
+      nodeNetwork.blockAssemblyService -> this \
+      "Send Block Candidate to | Receive Proof-of-Work from"
     }
 
 
 //  Multicast Network (mNet or M-Net)
     mNet = softwareSystem "Multicast Network" {
-      description "Handles incoming transactions and subtrees for the Node network"
+      description \
+      "Handles incoming transactions and subtrees for the Node network"
       tags "MNet"
     }
 
@@ -220,7 +241,8 @@ workspace {
       this -> overlayNetwork.publicEndpointsService "Block found | Notify Block found"
     }
 
-    mNetSubtreeAnnouncement = softwareSystem "Merkle Subtree announcement Multicast Group" {
+    mNetSubtreeAnnouncement = softwareSystem \
+    "Merkle Subtree announcement Multicast Group" {
       description "Multicasts constructed Subtrees to the Node Network"
       tags "MNet"
       this -> nodeNetwork.publicEndpointsService "New Merkle Subtree"
@@ -230,8 +252,10 @@ workspace {
     mNetRequest = softwareSystem "TX|Subtree|Block request Multicast Group" {
       description "Requests missing TX, Subtree, or Block to be remulticasted"
       tags "MNet"
-      this -> nodeNetwork.publicEndpointsService "New TX|Merkle Subtree|Block request"
-      this -> overlayNetwork.publicEndpointsService "New TX|Merkle Subtree|Block request"
+      this -> nodeNetwork.publicEndpointsService \
+      "New TX|Merkle Subtree|Block request"
+      this -> overlayNetwork.publicEndpointsService \
+      "New TX|Merkle Subtree|Block request"
     }
 
     wallet = person "A Wallet" "A User's wallet" {
@@ -264,10 +288,8 @@ workspace {
     }
 
     styles {
-      softwareSystem {
-        border {
-          thickness 4
-        }
+      element "SoftwareSystem" {
+        strokeWidth 4
         background #1168bd
         color #ffffff
         shape roundedBox
