@@ -16,6 +16,11 @@
       //autolayout lr
     }
 
+    component "nodeNetwork.blockAssemblyService" {
+      include *
+      autolayout lr
+    }
+
     styles {
       element "SoftwareSystem" {
         strokeWidth 4

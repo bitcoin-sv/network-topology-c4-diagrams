@@ -34,10 +34,8 @@
           txValidationService -> this "Send TXIDs to"
         }
 
-        blockassemblyService = container "BlockAssembly Service" \
-        "Responsible for assembling new blocks with transactions" "Golang" {
-          txValBlockAssBroker -> this "Broker TXIDs to"
-        }
+        !include ./blockAssemblyService.dsl
+
 
         blockchainService = container "Blockchain Service" \
         "Handles operations related to the blockchain" "Golang" {
@@ -65,10 +63,14 @@
           txValidationService -> this "Store TX metadata"
           blockAssemblyService -> this "Update TX Meta Store"
           blockValidationService -> this "Update TX Meta Meta Store"
+          blockAssemblyService.subtreeMicroService1 -> this "Validates TXIDs against"
+          blockAssemblyService.subtreeMicroService2 -> this "Validates TXIDs against"
+          blockAssemblyService.subtreeMicroService3 -> this "Validates TXIDs against"
+          blockAssemblyService.subtreeMicroService4 -> this "Validates TXIDs against"
         }
 
-        txStore = container "Tx Store" "Manages transaction metadata" \
-        "TX Metadata" {
+        txStore = container "Tx Store" "Stores TXs" \
+        "TXs" {
           tags "Database"
         }
 
@@ -93,5 +95,9 @@
           "Store Merkle Subtrees | <-Get new Merkle Subtrees"
           blockValidationService -> this "Get new Merkle Subtrees"
           publicEndpointsService -> this "Subtree received"
+          blockAssemblyService.subtreeMicroService1 -> this "Sends subtrees to"
+          blockAssemblyService.subtreeMicroService2 -> this "Sends subtrees to"
+          blockAssemblyService.subtreeMicroService3 -> this "Sends subtrees to"
+          blockAssemblyService.subtreeMicroService4 -> this "Sends subtrees to"
         }
     }

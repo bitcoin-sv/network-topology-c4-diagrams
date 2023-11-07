@@ -5,7 +5,7 @@ workspace {
   model {
 
 //  Teranode
-    !include ./teranode.dsl
+    !include ./teranode/teranode.dsl
 
 //  Overlay Node
     !include ./overlayNode.dsl
