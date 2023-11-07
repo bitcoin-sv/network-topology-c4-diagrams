@@ -6,6 +6,8 @@
       "New TX|Merkle Subtree|Block request"
       this -> overlayNetwork.publicEndpointsService \
       "New TX|Merkle Subtree|Block request"
-      nodeNetwork.blockValidationService.bVSubtreeMicroservice1 "Request missing TX"
-      nodeNetwork.blockValidationService.bVSubtreeMicroservice2 "Request missing TX"
+      nodeNetwork.blockValidationService.bVSubtreeMicroservice1 -> this \
+      "Request missing TX"
+      nodeNetwork.blockValidationService.bVSubtreeMicroservice2 -> this \
+      "Request missing TX"
     }
