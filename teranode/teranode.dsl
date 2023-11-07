@@ -5,19 +5,18 @@
 
         tags "SoftwareSystem"
 
-
-        propagationService = container "Propagation Service" {
-          description "Responsible for the propagation of transactions and \
-          blocks across the network"
-          technology "Golang"
-        }
+        !include ./propagationService.dsl
 
         propTxValBroker = container "Propagation-TxValidation Message Broker" {
           description "Responsible for brokering transactions from Propagation \
           Services to TX Validation Services"
           technology "Kafka"
           tags "MessageBroker"
-          propagationService -> this "Send extended TXs to"
+          propagationService -> this "Sends extended TXs to"
+          propagationService.mNetReceiverMicroservice1 -> this "Sends extended TXs to"
+          propagationService.mNetReceiverMicroservice2 -> this "Sends extended TXs to"
+          propagationService.mNetReceiverMicroservice3 -> this "Sends extended TXs to"
+          propagationService.mNetReceiverMicroservice4 -> this "Sends extended TXs to"
         }
 
         !include ./txValidationService.dsl
@@ -76,6 +75,10 @@
         txStore = container "Tx Store" "Stores TXs" \
         "TXs" {
           tags "Database"
+          propagationService.mNetReceiverMicroservice1 -> this "Stores TXs in"
+          propagationService.mNetReceiverMicroservice2 -> this "Stores TXs in"
+          propagationService.mNetReceiverMicroservice3 -> this "Stores TXs in"
+          propagationService.mNetReceiverMicroservice4 -> this "Stores TXs in"
         }
 
         utxoStore = container "UTXO Store" "Manages UTXOs" "UTXOs" {

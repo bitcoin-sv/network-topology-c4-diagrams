@@ -26,6 +26,11 @@
       //autolayout tb
     }
 
+    component "nodeNetwork.propagationService" {
+      include *
+      //autolayout tb
+    }
+
     styles {
       element "SoftwareSystem" {
         strokeWidth 4
