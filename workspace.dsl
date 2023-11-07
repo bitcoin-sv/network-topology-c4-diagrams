@@ -4,263 +4,43 @@ workspace {
 
   model {
 
-    nodeNetwork = softwareSystem "Node Network (Teranode)" "Timestamps  \
-    transactions into Blocks, maintains UTXO set, and enforces the rules  \
-    of the Blockchain" {
-
-        tags "SoftwareSystem"
-
-
-        propagationService = container "Propagation Service" {
-          description "Responsible for the propagation of transactions and \
-          blocks across the network"
-          technology "Golang"
-        }
-
-        propTxValBroker = container "Propagation-TxValidation Message Broker" {
-          description "Responsible for brokering transactions from Propagation \
-          Services to TX Validation Services"
-          technology "Kafka"
-          tags "MessageBroker"
-          propagationService -> this "Send extended TXs to"
-        }
-
-        txValidationService = container "TX Validation Service" {
-          description "Responsible for validating transactions"
-          technology "Golang"
-          propTxValBroker -> this "Broker extended TXs to"
-        }
-
-        txValBlockAssBroker = container "TxValidation-BlockAssembly Message Broker" {
-          description "Responsible for brokering TXIDs from the TX Validation \
-          Services to the Block Assembly Services"
-          tags "MessageBroker"
-          technology "Golang"
-          txValidationService -> this "Send TXIDs to"
-        }
-
-        blockassemblyService = container "BlockAssembly Service" \
-        "Responsible for assembling new blocks with transactions" "Golang" {
-          txValBlockAssBroker -> this "Broker TXIDs to"
-        }
-
-        blockchainService = container "Blockchain Service" \
-        "Handles operations related to the blockchain" "Golang" {
-          blockAssemblyService -> this \
-          "Notify Block found | <-Get best Block Header"
-        }
-
-        blockvalidationService = container "BlockValidation Service" {
-          description "Validates new Blocks"
-          technology "Golang"
-          this -> blockchainService "Valid Block found"
-        }
-
-        publicEndpointsService = container "Public Endpoints Service" {
-          description "Provides API Endppoints"
-          technology "Golang"
-          this -> blockValidationService \
-          "Block found| <-Notify Block found"
-        }
-
-        //Teranode Data Stores
-        txmetaStore = container "TxMeta Store" \
-        "Manages transaction metadata" "TX Metadata" {
-          tags "Database"
-          txValidationService -> this "Store TX metadata"
-          blockAssemblyService -> this "Update TX Meta Store"
-          blockValidationService -> this "Update TX Meta Meta Store"
-        }
-
-        txStore = container "Tx Store" "Manages transaction metadata" "TX Metadata" {
-          tags "Database"
-        }
-
-        utxoStore = container "UTXO Store" "Manages UTXOs" "UTXOs" {
-          tags "Database"
-          txValidationService -> this "Validate against UTXO set | Update UTXO set"
-          blockAssemblyService -> this "Update UTXO set"
-        }
-
-        blockHeaderStore = container "Block Header Store" {
-          description "Manages Block Headers"
-          technology "Block Headers"
-          tags "Database"
-          blockchainService -> this \
-          "Update Block Header Store | <-Get best Block Header"
-        }
-
-        merkleSubtreeStore = container "Merkle Subtree Store" \
-        "Manages Merkle Subtrees" "Merkle Subtrees" {
-          tags "Database"
-          blockAssemblyService -> this \
-          "Store Merkle Subtrees | <-Get new Merkle Subtrees"
-          blockValidationService -> this "Get new Merkle Subtrees"
-          publicEndpointsService -> this "Subtree received"
-        }
-    }
+//  Teranode
+    !include ./teranode.dsl
 
 //  Overlay Node
-    overlayNetwork = softwareSystem "Overlay Network (Overlay Node)" {
-
-      tags "SoftwareSystem"
-
-        propagationService = container "Propagation Service" {
-          description \
-          "Responsible for the propagation of transactions and blocks across the network"
-          technology "Golang"
-        }
-
-        propTxValBroker = container "Propagation-TxValidation Message Broker" {
-          description "Responsible for brokering transactions from Propagation \
-          Services to TX Validation Services"
-          technology "Kafka"
-          tags "MessageBroker"
-          overlayNetwork.propagationService -> this "Send extended transactions to"
-        }
-
-        txValidationService = container "TX Validation Service" {
-          description "Responsible for validating transactions"
-          technology "Golang"
-          overlayNetwork.propTxValBroker -> this "Broker extended transactions to"
-        }
-
-        blockchainService = container "Blockchain Service" {
-          description "Handles operations related to the blockchain"
-          technology "Golang"
-        }
-
-        publicEndpointsService = container "Public Endpoints Service" {
-          description "Provides API Endppoints"
-          technology "Golang"
-        }
-
-        //Teranode Data Stores
-        txmetaStore = container "TxMeta Store" \
-        "Manages transaction metadata" "TX Metadata" {
-          tags "Database"
-        }
-
-        txStore = container "Tx Store" "Manages transaction metadata" "TX Metadata" {
-          tags "Database"
-        }
-
-        utxoStore = container "UTXO Store" "Manages UTXOs" "UTXOs" {
-          tags "Database"
-        }
-
-        blockHeaderStore = container "Block Header Store" \
-        "Manages Block Headers" "Block Headers" {
-          tags "Database"
-          blockchainService -> this \
-          "Update Block Header Store | <-Get best Block Header"
-        }
-
-        merkleSubtreeStore = container "Merkle Subtree Store" \
-        "Manages Merkle Subtrees" "Merkle Subtrees" {
-          tags "Database"
-          publicEndpointsService -> this "Subtree received"
-        }
-
-    }
+    !include ./overlayNode.dsl
 
 //  Teranode Ancilliary Services
-    legacyP2PNetworkBridge = softwareSystem "Legacy P2P Network Bridge" {
-      description "Handles peer-to-peer network communication"
-    }
+    !include ./legacyP2PNetworkBridge.dsl
 
-    txLookupService = softwareSystem "TX/TXO Lookup Service" {
-      description "Allows legacy lookup of transactions and transaction outputs"
-      this -> overlayNetwork.txStore "<-Get extended TX"
-      this -> nodeNetwork.txStore "<-Get extended TX"
-      legacyP2PNetworkBridge -> this "Extend TX if needed"
-    }
+    !include ./txLookupService.dsl
 
-    peerService = softwareSystem "Peer Service" {
-      description "Allows IPv4 Peer connections"
-      this -> overlayNetwork.txStore "<-Get extended TX"
-      this -> overlayNetwork.merkleSubtreeStore "Update Merkle Subtree Store"
-      overlayNetwork.blockchainService -> this "Notify Block found"
-      this -> nodeNetwork.txStore "<-Get extended TX"
-      this -> nodeNetwork.merkleSubtreeStore "Update Merkle Subtree Store"
-      nodeNetwork.blockchainService -> this "Notify Block found"
-    }
+    !include ./peerService.dsl
 
-    coinbaseOverlayNode = softwareSystem "Coinbase Overlay Node" {
-      description "Handles operations related to the coinbase transaction of a block"
-    }
+    !include ./coinbaseOverlayNode.dsl
 
-    txSubmissionService = softwareSystem "TX Submission Service (ARC)" {
-      description "Submits transactions to the Node network via IPv6 multicast"
-    }
+    !include ./txSubmissionService.dsl
 
-    banlistService = softwareSystem "Banlist Service" {
-      description \
-      "Maintains a dynamic banlist related to rejected TXs, Blocks, and Subtrees"
-      this -> nodeNetwork.utxoStore "Updates UTXO Store"
-      this -> overlayNetwork.utxoStore "Updates UTXO Store"
-    }
+    !include ./banlistService.dsl
 
-    utxoLookupService = softwareSystem "UTXO Lookup Service" {
-      description "Provides an API to lookup the statuses of UTXOs"
-      this -> nodeNetwork.utxoStore "<-Get UTXO status"
-      this -> nodeNetwork.txmetaStore "<-Get TX metadata"
-      this -> overlayNetwork.utxoStore "<-Get UTXO status"
-      this -> overlayNetwork.txmetaStore "<-Get TX metadata"
-    }
+    !include ./utxoLookupService.dsl
 
-    hashers = softwareSystem "Hashing pool to find Proof-of-Work" {
-      nodeNetwork.blockAssemblyService -> this \
-      "Send Block Candidate to | Receive Proof-of-Work from"
-    }
+    !include ./hashers.dsl
+
 
 
 //  Multicast Network (mNet or M-Net)
-    mNet = softwareSystem "Multicast Network" {
-      description \
-      "Handles incoming transactions and subtrees for the Node network"
-      tags "MNet"
-    }
+    !include ./mNet.dsl
 
-    mNetTXSubmission = softwareSystem "TX Submission Multicast Group" {
-      description "Multicasts received extended transactions to the Node Network"
-      tags "MNet"
-      this -> nodeNetwork.txStore "Multicasts extended TXs to"
-      this -> nodeNetwork.propagationService "Multicasts extended TXs to"
-      this -> banlistService "Multicasts transactions to"
-      this -> txSubmissionService "Receives TXs from"
-      this -> overlayNetwork.txStore "Multicasts extended TXs to"
-      this -> overlayNetwork.propagationService "Multicasts extended TXs to"
-      legacyP2PNetworkBridge -> this "Receive extended TXs from | Send TXs to"
-    }
+    !include ./mNetTxSubmission.dsl
 
-    mNetBlockAnnouncement = softwareSystem "Block announcement Multicast Group" {
-      description "Multicasts found Blocks to the Node Network"
-      tags "MNet"
-      this -> nodeNetwork.publicEndpointsService "Block found | Notify Block found"
-      this -> overlayNetwork.publicEndpointsService "Block found | Notify Block found"
-    }
+    !include ./mNetBlockAnnouncement.dsl
 
-    mNetSubtreeAnnouncement = softwareSystem \
-    "Merkle Subtree announcement Multicast Group" {
-      description "Multicasts constructed Subtrees to the Node Network"
-      tags "MNet"
-      this -> nodeNetwork.publicEndpointsService "New Merkle Subtree"
-      this -> overlayNetwork.publicEndpointsService "New Merkle Subtree"
-    }
+    !include ./mNetSubtreeAnnouncement.dsl
 
-    mNetRequest = softwareSystem "TX|Subtree|Block request Multicast Group" {
-      description "Requests missing TX, Subtree, or Block to be remulticasted"
-      tags "MNet"
-      this -> nodeNetwork.publicEndpointsService \
-      "New TX|Merkle Subtree|Block request"
-      this -> overlayNetwork.publicEndpointsService \
-      "New TX|Merkle Subtree|Block request"
-    }
+    !include ./mNetRequest.dsl
 
-    wallet = person "A Wallet" "A User's wallet" {
-      tags "System"
-    }
+    !include ./wallet.dsl
 
 
 //  SystemLandscape
