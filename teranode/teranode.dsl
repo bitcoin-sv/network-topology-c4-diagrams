@@ -35,12 +35,8 @@
 
         !include ./blockAssemblyService.dsl
 
+        !include ./blockchainService.dsl
 
-        blockchainService = container "Blockchain Service" \
-        "Handles operations related to the blockchain" "Golang" {
-          blockAssemblyService -> this \
-          "Notify Block found | <-Get best Block Header"
-        }
 
         blockvalidationService = container "BlockValidation Service" {
           description "Validates new Blocks"
@@ -52,7 +48,7 @@
           description "Provides API Endppoints"
           technology "Golang"
           this -> blockValidationService \
-          "Block found | <-Notify Block found"
+          "Block found | Subtree received"
         }
 
         //Teranode Data Stores
@@ -96,6 +92,8 @@
           technology "Block Headers"
           tags "Database"
           blockchainService -> this \
+          "Update Block Header Store | <-Get best Block Header"
+          blockchainService.blockchainServer -> this \
           "Update Block Header Store | <-Get best Block Header"
         }
 

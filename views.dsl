@@ -31,6 +31,11 @@
       //autolayout tb
     }
 
+    component "nodeNetwork.blockchainService" {
+      include *
+      autolayout tb
+    }
+
     styles {
       element "SoftwareSystem" {
         strokeWidth 4
