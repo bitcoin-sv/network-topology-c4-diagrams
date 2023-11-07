@@ -36,6 +36,11 @@
       autolayout tb
     }
 
+    component "nodeNetwork.blockValidationService" {
+      include *
+      //autolayout tb
+    }
+
     styles {
       element "SoftwareSystem" {
         strokeWidth 4

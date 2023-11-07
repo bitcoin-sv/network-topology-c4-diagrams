@@ -37,12 +37,8 @@
 
         !include ./blockchainService.dsl
 
+        !include ./blockValidationService.dsl
 
-        blockvalidationService = container "BlockValidation Service" {
-          description "Validates new Blocks"
-          technology "Golang"
-          this -> blockchainService "Valid Block found"
-        }
 
         publicEndpointsService = container "Public Endpoints Service" {
           description "Provides API Endppoints"
@@ -66,6 +62,8 @@
           txValidationService.txValidationMicroservice2 -> this "TX metadata to"
           txValidationService.txValidationMicroservice3 -> this "TX metadata to"
           txValidationService.txValidationMicroservice4 -> this "TX metadata to"
+          blockValidationService.bVSubtreeMicroservice1 -> this "TX metadata to"
+          blockValidationService.bVSubtreeMicroservice2 -> this "TX metadata to"
         }
 
         txStore = container "Tx Store" "Stores TXs" \
@@ -75,6 +73,8 @@
           propagationService.mNetReceiverMicroservice2 -> this "Stores TXs in"
           propagationService.mNetReceiverMicroservice3 -> this "Stores TXs in"
           propagationService.mNetReceiverMicroservice4 -> this "Stores TXs in"
+          blockValidationService.bVSubtreeMicroservice1 -> this "Store missing TXs in"
+          blockValidationService.bVSubtreeMicroservice2 -> this "Store missing TXs in"
         }
 
         utxoStore = container "UTXO Store" "Manages UTXOs" "UTXOs" {
@@ -85,6 +85,8 @@
           txValidationService.txValidationMicroservice2 -> this "Update UTXOs to 'spent'"
           txValidationService.txValidationMicroservice3 -> this "Update UTXOs to 'spent'"
           txValidationService.txValidationMicroservice4 -> this "Update UTXOs to 'spent'"
+          blockValidationService.bVSubtreeMicroservice1 -> this "Update UTXOs to 'spent'"
+          blockValidationService.bVSubtreeMicroservice2 -> this "Update UTXOs to 'spent'"
         }
 
         blockHeaderStore = container "Block Header Store" {
@@ -104,9 +106,11 @@
           "Store Merkle Subtrees | <-Get new Merkle Subtrees"
           blockValidationService -> this "Get new Merkle Subtrees"
           publicEndpointsService -> this "Subtree received"
-          blockAssemblyService.subtreeMicroService1 -> this "Sends subtrees to"
-          blockAssemblyService.subtreeMicroService2 -> this "Sends subtrees to"
-          blockAssemblyService.subtreeMicroService3 -> this "Sends subtrees to"
-          blockAssemblyService.subtreeMicroService4 -> this "Sends subtrees to"
+          blockAssemblyService.subtreeMicroService1 -> this "Store subtrees in"
+          blockAssemblyService.subtreeMicroService2 -> this "Store subtrees in"
+          blockAssemblyService.subtreeMicroService3 -> this "Store subtrees in"
+          blockAssemblyService.subtreeMicroService4 -> this "Store subtrees in"
+          blockValidationService.bVSubtreeMicroservice1 -> this "Store subtrees in"
+          blockValidationService.bVSubtreeMicroservice2 -> this "Store subtrees in"
         }
     }
