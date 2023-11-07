@@ -18,7 +18,12 @@
 
     component "nodeNetwork.blockAssemblyService" {
       include *
-      autolayout lr
+      //autolayout tb
+    }
+
+    component "nodeNetwork.txValidationService" {
+      include *
+      //autolayout tb
     }
 
     styles {

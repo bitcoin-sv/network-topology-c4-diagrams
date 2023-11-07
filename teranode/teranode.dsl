@@ -20,11 +20,7 @@
           propagationService -> this "Send extended TXs to"
         }
 
-        txValidationService = container "TX Validation Service" {
-          description "Responsible for validating transactions"
-          technology "Golang"
-          propTxValBroker -> this "Broker extended TXs to"
-        }
+        !include ./txValidationService.dsl
 
         txValBlockAssBroker = container "TxValidation-BlockAssembly Message Broker" {
           description "Responsible for brokering TXIDs from the TX Validation \
@@ -32,6 +28,10 @@
           tags "MessageBroker"
           technology "Golang"
           txValidationService -> this "Send TXIDs to"
+          txValidationService.txValidationMicroservice1 -> this "Send TXIDs to"
+          txValidationService.txValidationMicroservice2 -> this "Send TXIDs to"
+          txValidationService.txValidationMicroservice3 -> this "Send TXIDs to"
+          txValidationService.txValidationMicroservice4 -> this "Send TXIDs to"
         }
 
         !include ./blockAssemblyService.dsl
@@ -53,7 +53,7 @@
           description "Provides API Endppoints"
           technology "Golang"
           this -> blockValidationService \
-          "Block found| <-Notify Block found"
+          "Block found | <-Notify Block found"
         }
 
         //Teranode Data Stores
@@ -67,6 +67,10 @@
           blockAssemblyService.subtreeMicroService2 -> this "Validates TXIDs against"
           blockAssemblyService.subtreeMicroService3 -> this "Validates TXIDs against"
           blockAssemblyService.subtreeMicroService4 -> this "Validates TXIDs against"
+          txValidationService.txValidationMicroservice1 -> this "TX metadata to"
+          txValidationService.txValidationMicroservice2 -> this "TX metadata to"
+          txValidationService.txValidationMicroservice3 -> this "TX metadata to"
+          txValidationService.txValidationMicroservice4 -> this "TX metadata to"
         }
 
         txStore = container "Tx Store" "Stores TXs" \
@@ -78,6 +82,10 @@
           tags "Database"
           txValidationService -> this "Validate against UTXO set | Update UTXO set"
           blockAssemblyService -> this "Update UTXO set"
+          txValidationService.txValidationMicroservice1 -> this "Update UTXOs to 'spent'"
+          txValidationService.txValidationMicroservice2 -> this "Update UTXOs to 'spent'"
+          txValidationService.txValidationMicroservice3 -> this "Update UTXOs to 'spent'"
+          txValidationService.txValidationMicroservice4 -> this "Update UTXOs to 'spent'"
         }
 
         blockHeaderStore = container "Block Header Store" {
