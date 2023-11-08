@@ -13,7 +13,7 @@ You can add the `-d` option to run the container in the background.
 
 ---------
 
-If you have docker compoise installed you can use:
+If you have docker compose installed, you can use:
 
 ```
 docker compose up -d
