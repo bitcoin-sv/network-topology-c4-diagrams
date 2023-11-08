@@ -8,3 +8,10 @@ container port to a localhost port:
 
 `docker run -v [path_to_your_local_folder]:/usr/local/structurizr -p [your_localhost_port]:8080 structurizr/lite:latest`
 
+If you have docker compoise installed you can use:
+
+```
+docker compose up -d
+```
+
+This uses the local directory as default workspace and will host the content at [http://localhost:3030](http://localhost:3030)

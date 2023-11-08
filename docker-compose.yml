@@ -1,0 +1,11 @@
+
+version: '3'
+
+services:
+  structurizr:
+    image: structurizr/lite:latest
+    volumes:
+      - .:/usr/local/structurizr
+    ports:
+      - 3030:8080
+ 
