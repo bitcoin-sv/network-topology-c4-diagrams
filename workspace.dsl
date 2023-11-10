@@ -30,15 +30,15 @@ workspace {
 
 
 //  Multicast Network (mNet or M-Net)
-    !include ./mNet.dsl
+    !include ./mNet/mNet.dsl
 
-    !include ./mNetTxSubmission.dsl
+    !include ./mNet/mNetTxSubmission.dsl
 
-    !include ./mNetBlockAnnouncement.dsl
+    !include ./mNet/mNetBlockAnnouncement.dsl
 
-    !include ./mNetSubtreeAnnouncement.dsl
+    !include ./mNet/mNetSubtreeAnnouncement.dsl
 
-    !include ./mNetRequest.dsl
+    !include ./mNet/mNetRequest.dsl
 
     !include ./wallet.dsl
 
