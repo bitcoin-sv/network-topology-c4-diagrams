@@ -40,11 +40,12 @@ workspace {
 
     !include ./mNet/mNetRequest.dsl
 
-    !include ./wallet.dsl
+    !include ./users.dsl
 
 
 //  SystemLandscape
-    wallet -> overlayNetwork "Interacts with and submits transactions to"
+    alice -> bob "Sends TXs P2P"
+    bob -> overlayNetwork "Interacts with and submits transactions to"
     overlayNetwork -> mNet "Submits extended TXs to"
     mNet -> nodeNetwork "Multicasts extended TXs to"
 

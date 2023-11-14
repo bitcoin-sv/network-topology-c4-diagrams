@@ -1,7 +1,7 @@
 views {
 
   systemlandscape "SystemLandscape" {
-    include wallet overlayNetwork mNet nodeNetwork
+    include alice bob overlayNetwork mNet nodeNetwork
     autolayout lr
   }
 
